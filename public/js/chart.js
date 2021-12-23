@@ -33,9 +33,21 @@ const myChart = new Chart(ctx, {
                 display:false
             }
         },
-        legend:{
-            position:'bottom',
-        }
+        plugins: {
+            legend: {
+              display: true,
+              position: 'bottom'
+            },
+            title: {
+                display: true,
+                position:'top',
+                text: "전체농장현황",
+                font: {
+                  size: 18,
+                  color:'black'
+                }
+              }
+          }
     }
 });
 const chartArea = document.getElementById('myLineChart').getContext('2d');
@@ -74,7 +86,7 @@ const myLineChart = new Chart(chartArea, {
              ['rgba(22, 114, 236, 1)'],
              // ⑨dataset의 선 두께(Number)
              borderWidth: 1 ,
-             tension: 0.4
+             tension: 0.5
         }]
 },
     // ⑩차트의 설정(Object)
@@ -94,7 +106,11 @@ const myLineChart = new Chart(chartArea, {
               font: {
                 size: 18
               }
-            }
+            },
+            legend: {
+                display: true,
+                position: 'top'
+              }
           }
     }
 });

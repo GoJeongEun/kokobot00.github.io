@@ -39,8 +39,22 @@ ul.topDong {
     border-radius: 5px;
     margin-right: 10px;
 }
+.topDong .topDongItem:ntha-child(2) > .topDongicon {
+    background: #FCE3BF;
+}
+.topDong .topDongItem:nth-child(3) > .topDongicon {
+    background: #EBFFED;
+}
+.topDong .topDongItem:nth-child(4) > .topDongicon {
+    background: #F4EBFF;
+}
+
+
 .topDongicon img {
-    padding: 0.25rem;
+    /* padding: 0.25rem; */
+    margin: 0.25rem;
+    width: 35px;
+    height: 35px;
 }
 .topDongT {
     width: 120px;
@@ -57,12 +71,12 @@ li.topDongItem::after {
     background: #EAEAEA;
     margin-left: 30px;
 }
-.topDongT .font-B {
+ .font-B {
     color: black;
     font-weight: 600;
 }
 
-.topDongT .font-g {
+.font-g {
     color: #606266;
     font-weight: 600;
 }
@@ -87,7 +101,7 @@ li.topDongItem::after {
 /* 이벤트카드슬라이더 */
 .eventSlide {
     background: white;
-    width: 50%;
+    width: 60%;
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
@@ -95,11 +109,8 @@ li.topDongItem::after {
     height: 80px;
 }
 li.eventItem {
-    /* display: flex; */
-    padding: 1.8rem;
+    padding: 1.8rem 4rem;
     height: 80px;
-    /* background: white;
-    border-radius: 10px; */
 }
 li.eventItem div {
     float: left;
@@ -109,7 +120,7 @@ li.eventItem div {
     height: 45px;
     background: #EBF2FF;
     border-radius: 5px;
-    margin-right: 1.2rem;
+    margin-right: 1.5rem;
 }
 .eventIcon img {
     /* width: 25px; */
@@ -137,10 +148,63 @@ li.eventItem div {
     border-radius: 5px;
     margin-left: 5px;
 }
-.chartBox  {
-    margin-top: 2%;
+.chartBox ,.chartBox2  {
+    margin-top: 25px;
     background: white;
+
+}
+.chartBox2  {
+    width: 64.5%;
+    max-height: 350px;
+}
+.chartBox {
+    margin-right: 2%;
 }
 .chartBox .chart {
     margin-right: 1.5%;
+    height: 350px;
 }  
+#myChart,#myLineChart {
+   max-height: 350px; 
+}
+/* newCalendar */
+.newCalendar {
+    margin-top: 25px;
+    width: 60%;
+}
+.newCalendarTwo {
+    margin-top: 25px;
+}
+.newCalendarT {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+.newCalendarT span {
+    vertical-align: bottom;
+}
+.newCalendarT span:last-child {
+    float: right;
+    cursor: pointer;
+}
+.CalendarTable table tbody .day {
+    width: 2.2em;
+    height: 2.2em;
+    line-height: 2.2em;
+    border-radius: 50%;
+    display: inline-block;   
+}
+.CalendarTable table {
+    border-bottom: 1px solid #ddda;
+}
+.TableTopTitle {
+    margin: 0.8rem 0;
+}
+.StitleL p{
+    margin: 0;
+}
+.StitleL .font-g {
+    font-size: 1.2rem;
+}
+.ScheduleT div {
+    float: left;
+}
