@@ -1,0 +1,75 @@
+.relative {
+    position: relative;
+}
+
+.numeric-keypad-box {
+    display: none;
+    position: absolute;
+    top: 41px;
+    left: 5px;
+    z-index: 9999;
+}
+
+.number-box {
+    width: 250px;
+    height: 300px;
+    padding: 12px;
+    border-radius: 4px;
+    border: 2px solid #171717;
+    background-color: #282828;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.num-btn {
+    width: 50px;
+    height: 60px;
+    background-color: #282828;
+    color: #939393!important;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    border: 2px solid #171717;
+    cursor: pointer;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+}
+.num-btn:hover {
+  color: #fff;
+}
+
+.num-btn-clear {
+    width: 68px;
+    background-color: #666;
+    color: #111!important;
+    font-size: 1em;
+}
+
+.num-btn-delete {
+    width: 68px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #666;
+    color: #111!important;
+    font-size: 1em;
+}
+
+.num-btn-phone {
+    width: 68px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #282828;
+    color: white;
+    font-size: 2em;
+}
+
+.num-btn-push {
+    width: 68px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #FFBF05;
+    color: #282828!important;
+    font-size: 1em;
+}

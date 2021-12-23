@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+li {
+    list-style: none;
+}
+
+/* 박스공통 */
+.boxCustom {
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 12px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+}
+/*메뉴바 밑 미들메뉴*/
+article#wrapper-top {
+    display: block;
+    height: 160px;
+}
+article#middle\ header {
+    width: 100%;
+    height: 50px;
+    z-index: 9;
+    background: white;
+    border-bottom: 1.5px solid #1672EC;
+    position: absolute;
+}
+.middlenav {
+    width: 95%;
+    DISPLAY: block;
+    height: 50px;
+    margin: 0 auto;
+}
+ul.middle.inner {
+    display: contents;
+}
+ul.middle.inner li {
+    float: left;
+}
+li.middle_title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+li.middle_caption {
+    position: absolute;
+    right: 2%;
+    margin-top: 0.8rem;
+}
+select#farm {
+    border: 1px solid #C5C5C5;
+    border-radius: 18px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.calendar-container {
+    height: 287px;
+}
+/* 메인 컨텐츠 퀵아이콘 */
+.mainCon {
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    top: 210px;
+    background: #F0F2FA;  
+}
+.mainConinner {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+.mainConBox {
+    /* width: 25%; */
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 12px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    margin-right: 1.5%;
+    /* height: 287px; */
+}
+.right .mainConBox:nth-child(5) {
+    margin-right: 0;
+    width: 30%;
+    height: 660px;
+    padding: 0;
+}
+.mainConBox:nth-child(3) {
+    margin-right: 0;
+}
+.mainConBox:nth-child(4) {
+    margin-top: 2%;
+    margin-bottom: 2.5%;
+    width: 73.5%;
+}
+.left .mainConBox:nth-child(5) {
+    margin-top: 2%;
+    margin-right: 0;
+}
+.left .mainConBox:nth-child(1),.mainConBox:nth-child(2){
+    width: 36%;
+}
+.left {
+    float: left;
+    width: 73%;
+}
+.right{
+    float: right;
+    width: 26%;
+}
+
+/* m실험 */
+ .right>.mainConBox {
+    margin-right: 0;
+    /* width: 30%; */
+    height: 660px;
+    padding: 0;
+} 
+.mainConBox ul.itemBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin: 0;
+}
+.mainConBox ul.itemBox li {
+    padding: 1.2rem;
+    
+}
+.quick {
+    width: 46px;
+    height: 46px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    position: relative;
+}
+.alarm {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #1672EC;
+    position: absolute;
+    top: -3px;
+    left: 37px;
+}
+span.alarm.gray{
+    background: #e9e9e9;
+}
+
+.quick img {
+    width: 43px;
+    height: 43px;
+}
+.quickItem {
+    width: 22%;
+}
+.quick_title p{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+}
+.stockItem{
+    width: 50%;
+    padding: 3.4rem 1rem !important;
+}
+.stock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.stock a {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+}
+span.alarmtwo {
+    
+    height: 20px;
+    /* position: absolute; */
+    background: #1672EC;
+    border-radius: 15px;
+    /* right: 26px;
+    top: 1px; */
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+    line-height: 8px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+span.alarmtwo.gray {
+    background: #e9e9e9;
+}
+li.stockItem:nth-child(1), li.stockItem:nth-child(2){
+    border-bottom: 1px solid #ddd;
+}
+li.stockItem:nth-child(1), li.stockItem:nth-child(3){
+    border-right: 1px solid #ddd;
+}
+/* 지도맵 */
+.warringBox {
+    margin-top: 5%;
+}
+.map::after {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    background: #ffff0061;
+    top: 20%;
+    z-index: 1;
+    left: 19%;
+}
+.warringItem {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2%;
+    box-shadow: 0px 2px 12px rgb(0 0 0 / 10%);
+    border-radius: 15px;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+.warring {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+.warring img {
+    width: 40px;
+    height: 40px;
+}
+.warringT {
+    padding-left: 1.5rem;
+    width: 84%;
+}
+span.warringE {
+    float: right;
+}
+.warringT p {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+.warringT span {
+    color: #606266;
+    font-family: 'Manrope', sans-serif;
+}
+.F-bold {
+    font-weight: bold;
+    color: black;
+    
+
+
+
+
+
+}
+.warringE {
+    color: #1672EC !important;
+    
+}
+.warringE.gray {
+    color: #606266 !important;
+}
+/* 농장 이상정보 테이블 */
+.tableBox {
+    padding: 1rem;
+}
+.tabContainer {
+    display: flex;
+    justify-content: end;
+}
+li.tabBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(197, 220, 250, 0.5);
+    box-shadow: inset 0px 1px 2px rgb(97 97 97 / 20%), inset 0px 2px 4px rgb(97 97 97 / 20%);
+    border-radius: 30px;
+    width: 25%;
+}
+li.tabBox div {
+    padding: 0.8rem;
+}
+li.tabBox .tabItem.active{
+    background: white;
+    border-radius: 15px;
+    padding: 4px 12px;
+
+}
+li.tabBox .tabItem.active a{
+    color: #606266;
+}
+.farmTable {
+    color: #606266;
+    margin-top: 1rem;
+    width: 100%;
+} 
+.farmTable th, .farmTable td{
+    padding: 1rem 0rem; 
+    text-align: center;
+}
+.farmTable tr {
+    border-bottom:1px solid #e4e7ed ;
+}
+.farmTable tr:first-child {
+    border-top: 1px solid #e4e7ed;
+}
+.farmTable tbody tr:nth-child(odd) {
+    background: #EBF2FF;
+    cursor: pointer;
+
+}
+.farmTable tbody td a {
+    padding: 0rem 0.5rem;
+}
+/* 체크리스트 */
+.checkTitleBox {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 1rem 1rem 1rem;
+    font-family: Manrope;
+    font-size: 1.8rem;
+}
+.checkTitle {
+    line-height: 31px;
+}
+.checkItem {
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.inputCustom {
+    margin-right: 10px;
+}

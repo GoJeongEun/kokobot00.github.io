@@ -1,0 +1,172 @@
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  .col-125,
+  .col-175 {
+    width: 100%;
+    margin-top: 0;
+  }
+  .top-card {
+    width: 100%;
+  }
+  .card-panel {
+    width: 100%;
+    margin: 0;
+  }
+
+  #page-inner {
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+  }
+
+  .inputleft,
+  .inputright {
+    width: 100%;
+    float: none;
+  }
+
+  .inputleft {
+    margin-right: 0;
+  }
+}
+
+
+
+
+/* 웹화면 미디어 쿼리 */
+
+@media(min-width:768px) {
+    #page-wrapper {
+        margin: 0 0 0 275px;
+        padding: 0;
+        padding-bottom: 30px;
+        min-height: calc(100vh - 155px);
+    }
+}
+
+/* 모바일 미디어 쿼리 */
+@media(max-width:520px) {
+
+    .navbar-side {
+        z-index: 2;
+        position: fixed;
+        width: 260px;
+        top: 69px;
+        box-shadow: none;
+    }
+
+    .navbar-header>.navbar-toggle {
+        display: block;
+        width: 36px;
+        height: 36px;
+    }
+
+    #page-wrapper {
+        position: relative;
+        top: 59px;
+    }
+
+     #sideNav, #under-navbar, #sub-navbar  {
+        display: none;
+    }
+    ul #dropdown1 {
+        left: 0px !important;
+    }
+
+    .top-navbar .nav>li>a {
+        padding: 17px 12px;
+    }
+
+}
+
+@media(max-width:480px) {
+    #page-wrapper {
+        position: relative;
+        top: 93px;
+    }
+
+    .page-header small {
+        display: block;
+        padding-top: 14px;
+        font-size: 19px;
+    }
+
+    .dropdown-content {
+        min-width: 165px !important;
+        left: -68px !important;
+        top: 60px !important;
+    }
+
+    .top-navbar .nav>li>a b {
+        margin: 0 5px;
+    }
+
+    .dropdown-content li>a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #233342;
+    }
+
+    .dropdown-content li>a i {
+        font-size: 16px;
+    }
+
+    .dropdown-content li>a {
+        font-size: 12px;
+        /* margin: 0 4px; */
+        padding: 0;
+    }
+
+    .card.horizontal.cardIcon .card-image {
+        background: #30cc7b;
+        color: #fff !important;
+        font-size: 10px;
+        width: 94px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .card.horizontal.cardIcon .card-image i {
+        margin-top: 45%;
+        font-size: 55px;
+        opacity: .4;
+    }
+
+    .navbar-brand i.large.material-icons {
+        float: left;
+        font-size: 31px;
+        margin-right: 6px;
+    }
+
+    .clearBoth {
+        clear: both;
+    }
+
+    .icon-preview {
+        font-size: 13px !important;
+        padding: 15px !important;
+        display: inline-block;
+        line-height: 20px !important;
+    }
+
+    .icon-preview span {
+        display: inherit;
+    }
+
+    .dropdown-content li {
+        padding: 15px;
+        color: #233342;
+        font-size: 13px;
+    }
+
+
+    @media(max-width:320px) {
+        ul #dropdown1 {
+            left: 0px !important;
+        }
+
+        .top-navbar .nav>li>a {
+            padding: 17px 9px;
+        }
+    }

@@ -1,0 +1,79 @@
+/* 버튼 화면 밑에 따라다니기 */
+#page-inner {
+    width: 100%;
+    margin: 110px 20px 10px 0;
+    padding: 15px 30px;
+    padding-bottom: 50px; 
+    height: 78vh;   
+  }
+
+#page-inner::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    background: #e0e0e0;
+    height: 782px;
+    top: 0;
+    left: 10px;
+
+}
+  .prog1 {
+    max-height: 750px;
+  }
+
+  .prog2  {
+    max-height: 722px;
+    overflow: auto;
+  }
+  
+ 
+  .footer {
+    float: left;
+    border-top: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 5px 45px;
+    margin-left: -15px;
+    margin-right: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .fbtn button{
+    padding: 4px 10px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .footer .fpdf:hover {
+    background-color: #b30b00;
+    border-color: #b30b00;
+  }
+  
+  .footer .fexcel:hover {
+    background-color: #217346;
+    border-color: #217346;
+  }
+  
+  .footer .finit:hover {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+  }
+  
+  .footer .fsave {
+    background-color: #223189;
+    border: 1px solid #223189;
+  }
+
+.fbtn button:hover,
+.footer .fsave {
+  color: white;
+}
+
+.tablerow {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,202 @@
+.tabletop-btn, table {font-size: 12px !important;}
+
+/* 우측 조회 영역 */
+.right-side {
+    position: absolute;
+    right: 30px;
+    width: calc(33.33333333% - 15px)
+}
+.right-side .card-panel {height: 296px;}
+
+/* 하단테이블 */
+.tabletop-btn {margin-bottom: 5px;}
+.tabletop-btn>input[type=button] {padding: 2px 5px;}
+.tablerow {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+/* 테이블 */
+table {
+    border: 1px solid #ccc;
+    min-width: 10px;
+    width: 100%;
+}
+tbody {background-color: white;}
+
+/* 텍스트 얼라인 */
+th, td:first-of-type {text-align: center;}
+.tfoot-sum {text-align: right;}
+
+/* 테이블 보더 */
+tr {border-bottom: 1px solid #ccc;}
+tfoot>tr {border-bottom: none;}
+td, th {border-right: 1px solid #ccc;}
+td:last-of-type,
+th:last-of-type {border-right: none;}
+
+/* 테이블 여백 */
+thead>tr>th:first-of-type,
+table tr>td:first-of-type,
+tfoot tr>td:first-of-type {
+    width: 40px;
+}
+th:last-of-type,
+td:last-of-type {
+    width: 35px;
+    position: relative;
+}
+
+th, tfoot td {padding: 5px;}
+
+
+
+
+
+/* 테이블안 input 공통*/
+table input[type=text],
+table input[type=number],
+table select {
+    padding: 5px;
+    border: none;
+}
+table select {width: auto;}
+table input, table select {height: 31px !important;}
+
+/* 하단테이블 input */
+.bot-card table input[type=text],
+.bot-card table input[type=number] {
+    min-width: 130px;
+    max-width: 139px;
+}
+
+.bot-card input[type=time] {width: 89px; border: none;}
+.bot-card input[type=date] {width: 112px; border: none;}
+
+
+
+/* 우측 테이블 input */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 테이블 +-버튼 */
+.row-btn {
+    width: 20px; height: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+.row-add {background-color: blue;}
+.row-delete {background-color: red;}
+.row-delete::after,
+.row-add::before,
+.row-add::after {
+    content: "";
+    width: 15px; height: 4px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.row-add::before {width: 4px; height: 15px;}
+
+/* (임시)서브밋버튼 */
+.btnrow {margin-top: 10px;}
+
+/* 테이블 내에 인풋 디자인 변경 */
+table input::-webkit-input-placeholder {
+    color: #c0c0c0;
+    font-style: italic;
+    text-align: center;
+    font-size: 11px;
+  }
+table input {
+    width: 100%;
+    border: none;
+}
+table select {
+    /* background: url('arrow.jpg') no-repeat 95% 50%; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    text-align-last: center;
+    text-align: center;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
+}
+
+table input[type=number] {
+    text-align: right;
+}
+table input[type=number]::-webkit-outer-spin-button,
+table input[type=number]::-webkit-inner-spin-button {
+  margin-left: 10px;
+ 
+}
+
+
+input[type=date]::-webkit-datetime-edit-text, input[type=date]::-webkit-datetime-edit-month-field, 
+input[type=date]::-webkit-datetime-edit-day-field, input[type=date]::-webkit-datetime-edit-year-field, 
+input[type="date"]::-webkit-inner-spin-button  { 
+    -webkit-appearance: none; display: none; }
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+input[type=time]::-webkit-datetime-edit-text, input[type=time]::-webkit-datetime-edit-month-field, 
+input[type=time]::-webkit-datetime-edit-day-field, input[type=time]::-webkit-datetime-edit-year-field, 
+input[type=time]::-webkit-inner-spin-button  { 
+    -webkit-appearance: none; display: none; border: none;}
+
+input[type=time]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+input[type=time]::-webkit-calendar-picker-indicator {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+table input:focus {
+    outline: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  table select:focus {
+    outline: none;
+  }
