@@ -208,3 +208,11 @@ li.eventItem div {
 .ScheduleT div {
     float: left;
 }
+.ScheduleC {
+    position: absolute;
+    right: 20px;
+}
+input#Sucstom {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
