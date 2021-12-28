@@ -14,7 +14,7 @@
      <link href="css/custom-styles.css" rel="stylesheet" />
      <link href="css/common.css" rel="stylesheet" />
      <link href="css/Farmstatus.css" rel="stylesheet" />
-     
+     <link href="css/Farmdong.css" rel="stylesheet" />
      <!-- calender css, js -->
      <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
      <link href="css/calender.css" rel="stylesheet" />
@@ -46,7 +46,7 @@
             <div class="middlenav">
                 <ul class="middle inner">
                     <li class="middle_title">
-                        <p>농장현황</p>
+                        <p>한밭농장 1동(사육관리)</p>
                     </li>
                     <li class="middle_caption">
                         <select id="farm">
@@ -131,118 +131,192 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="chartBox Boxcustom col-lg-4">
-                                <div class="chart">
-                                    <canvas id="myChart" height="350"></canvas>
-                                </div>
-                            </div>   
-                            <div class="chartBox2 Boxcustom col-lg-7">
-                                <div class="chart">
-                                    <canvas id="myLineChart"></canvas>
+                            <div class="chickenProfile col-lg-3 Boxcustom w30">
+                                   <div class="chickenImg">
+                                       <img src="img/chicken.png" alt="치킨프로필">
+                                   </div>
+                                   <div class="chickenTitle">
+                                       <p>이력번호 123-458-4875</p>
+                                       <p>하이라인브라운</p>
+                                       <p>22주 157일령</p>
+                                       <p>한밭농장 | 1동</p>
+                                       <p>입추 수수 25,000</p>
                                    </div>
                             </div>
-                            <div class="mainConBox col-lg-12" style="width: 100%;">
-                                <ul class="tableBox">
-                                    <div class="tabContainer">
-                                        <li class="tabBox">
-                                            <div class="tabItem active">
-                                                <a href="#">1동</a>
+                            <div class="chartBox Boxcustom col-lg-3 w22" id="chickenBox" >
+                                <div class="chart-00">
+                                    <canvas id="dongChart"></canvas>
+                                </div>
+                            </div>   
+                            <div class="chartBox Boxcustom col-lg-4 w22">
+                                <div class="chart-00">
+                                    <canvas id="survivalChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="chartBox Boxcustom col-lg-4 w30" style="height: 180px; margin-right: 0;">
+                                <div class="chart-00">
+                                    
+                                </div>
+                            </div>
+                            <div class="dongConBox col-lg-12 Boxcustom">
+                                <ul class="borderC">
+                                    <li class="border">
+                                        <div class="blue"></div>
+                                    </li>
+                                    <li class="border-item">
+                                        <div class="Circle"></div>
+                                        <div class="CircleT">
+                                            <p>부화일</p>
+                                            <p>21.08.22</p>
+                                        </div>
+                                    </li>
+                                    <li class="border-item">
+                                        <div class="Circle"></div>
+                                        <div class="CircleT">
+                                            <p>입추일</p>
+                                            <p>21.11.22</p>
+                                        </div>
+                                    </li>
+                                    <li class="border-item">
+                                        <div class="Circle"></div>
+                                        <div class="CircleT">
+                                            <p>초산일령</p>
+                                            <p>21.12.25</p>
+                                        </div>
+                                    </li>
+                                    <li class="border-item">
+                                        <div class="Circle"></div>
+                                        <div class="CircleT">
+                                            <p>산란피크</p>
+                                            <p>21.12.30</p>
+                                        </div>
+                                    </li>
+                                    <li class="border-item">
+                                        <div class="Circle"></div>
+                                        <div class="CircleT">
+                                            <p>현재</p>
+                                            <p>22주(156일령)</p>
+                                        </div>
+                                    </li>
+                                    <li class="border-item">
+                                        <div class="Circle"></div>
+                                        <div class="CircleT">
+                                            <p>출하예정일</p>
+                                            <p>23.05.22</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="ArrowC">
+                                    <li class="ArrowItem">
+                                        <div class="square">
+                                            <div class="squareT">
+                                                <p>1. 어린병아리</p>
                                             </div>
-                                            <div class="tabItem">
-                                                <a href="#">2동</a>
+                                        </div>
+                                    </li>
+                                    <li class="ArrowItem">
+                                        <div class="square">
+                                            <div class="squareT">
+                                                <p>2. 중 병아리</p>
                                             </div>
-                                            <div class="tabItem">
-                                                <a href="#">3동</a>
+                                        </div>
+                                    </li>
+                                    <li class="ArrowItem">
+                                        <div class="square">
+                                            <div class="squareT">
+                                                <p>3. 큰 병아리</p>
+                                                <span class="triG"></span>
                                             </div>
-                                            <div class="tabItem">
-                                                <a href="#">4동</a>
+                                        </div>
+                                    </li>
+                                    <li class="ArrowItem">
+                                        <div class="square active">
+                                            <div class="squareT">
+                                                <p>4. 산란 전기</p>
+                                                <span class="triB"></span>
                                             </div>
-                                        </li>
+                                        </div>
+                                    </li>
+                                    <li class="ArrowItem">
+                                        <div class="square">
+                                            <div class="squareT">
+                                                <p>5. 산란 후기</p>
+                                                <span class="triG"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                         </div>
+                         <div class="dayTabBox">
+                            <ul class="dayTab">
+                                <li class="dayTabItem active">
+                                    <a href="#">7일</a>
+                                </li>
+                                <li class="dayTabItem">
+                                    <a href="#">14일</a>
+                                </li>
+                                <li class="dayTabItem">
+                                    <a href="#">30일</a>
+                                </li>
+                            </ul>
+                         </div>
+                         <div class="farmdongTableC col-lg-12 Boxcustom">
+                            <div class="tabContainer">
+                                <li class="tabBox">
+                                    <div class="tabItem active">
+                                        <a href="#">사육</a>
                                     </div>
-                                 <table class="farmTable">
-                                     <thead>
-                                          <tr>
-                                             <th><input type="checkbox"></th>
-                                             <th>계사명</th>
-                                             <th>현재 주령</th>
-                                             <th>품종</th>
-                                             <th>입추 수수</th>
-                                             <th>생존율</th>
-                                             <th>온습도</th>
-                                             <th>HD산란율</th>
-                                             <th>평균 난중</th>
-                                             <th>금일 생산량</th>
-                                             <th>수정</th>  
-                                      </tr></thead>
-                                      <tbody>
-                                      <tr>
-                                          <td><input type="checkbox" checked></td>
-                                          <td>3동</td>
-                                          <td>120일령</td>
-                                          <td>하이브라운</td>
-                                          <td>140,000</td>
-                                          <td>99%</td>
-                                          <td>38℃ | 35%</td>
-                                          <td>249~257</td>
-                                          <td>64.6gm</td>
-                                          <td>250,000</td>
-                                          <td><a href="#">수정</a><a href="#">편집</a><a href="#">삭제</a></td>
-                                      </tr>
-                                       <tr>
-                                        <td><input type="checkbox" checked></td>
-                                        <td>4동</td>
-                                        <td>120일령</td>
-                                        <td>하이브라운</td>
-                                        <td>140,000</td>
-                                        <td>99%</td>
-                                        <td>38℃ | 35%</td>
-                                        <td>249~257</td>
-                                        <td>64.6gm</td>
-                                        <td>250,000</td>
-                                        <td><a href="#">수정</a><a href="#">편집</a><a href="#">삭제</a></td>
-                                      </tr>
-                                      <tr>
-                                        <td><input type="checkbox" checked></td>
-                                          <td>1동</td>
-                                          <td>120일령</td>
-                                          <td>하이브라운</td>
-                                          <td>140,000</td>
-                                          <td>99%</td>
-                                          <td>38℃ | 35%</td>
-                                          <td>249~257</td>
-                                          <td>64.6gm</td>
-                                          <td>250,000</td>
-                                          <td><a href="#">수정</a><a href="#">편집</a><a href="#">삭제</a></td>
-                                      </tr>
-                                      <tr>
-                                        <td><input type="checkbox" checked></td>
-                                          <td>1동</td>
-                                          <td>120일령</td>
-                                          <td>하이브라운</td>
-                                          <td>140,000</td>
-                                          <td>99%</td>
-                                          <td>38℃ | 35%</td>
-                                          <td>249~257</td>
-                                          <td>64.6gm</td>
-                                          <td>250,000</td>
-                                          <td><a href="#">수정</a><a href="#">편집</a><a href="#">삭제</a></td>
-                                      </tr>
-                                      <tr>
-                                        <td><input type="checkbox" checked></td>
-                                          <td>4동</td>
-                                          <td>120일령</td>
-                                          <td>하이브라운</td>
-                                          <td>140,000</td>
-                                          <td>99%</td>
-                                          <td>38℃ | 35%</td>
-                                          <td>249~257</td>
-                                          <td>64.6gm</td>
-                                          <td>250,000</td>
-                                          <td><a href="#">수정</a><a href="#">편집</a><a href="#">삭제</a></td>
-                                      </tr>
-                                      </tbody>
-                                  </table>
-                                </ul> 
+                                    <div class="tabItem">
+                                        <a href="#">생산(산란)</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">사료</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">약품</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">환경</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">인공지능분석</a>
+                                    </div>
+                                </li>
+                                <div class="tabImgBox">
+                                    <ul class="tabImg">
+                                        <li class="tabImgItem">
+                                            <a href="#" alt="테이블">
+                                                <img src="icon/tableIcon_B.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="tabImgItem">
+                                            <a href="#" alt="차트">
+                                                <img src="icon/chartIcon.png" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tableC">
+                                <div class="chart48 col-lg-6 Boxcustom">
+                                    <canvas id="dieoutChart"></canvas>
+                                </div>
+                                <div class="chart48 col-lg-6 Boxcustom">
+                                    <canvas id="WeightChart"></canvas>
+                                </div>
+                                <div class="chart48 col-lg-6 Boxcustom">
+                                    <canvas id="feedChart"></canvas>
+                                </div>
+                                <div class="chart48 col-lg-6 Boxcustom">
+                                    <canvas id="waterChart"></canvas>
+                                </div>
+                                <div class="chart48 col-lg-6 Boxcustom">
+                                    <canvas id="temperatureChart"></canvas>
+                                </div>
+                                <div class="chart48 col-lg-6 Boxcustom">
+                                    <canvas id="humidityChart"></canvas>
+                                </div>
+                            </div>
                          </div>
                         </div>
                        <div class="right">
@@ -384,5 +458,6 @@
      <!-- chart.js -->
      <script type="text/javascript" src="js/chartbase.js"></script>
      <script type="text/javascript" src="js/chart.js"></script>
+     <script type="text/javascript" src="js/chart01.js"></script>
 </body>
 </html>

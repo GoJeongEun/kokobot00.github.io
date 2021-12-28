@@ -1,5 +1,5 @@
 
-
+// 전체농장현황 도넛 그래프
 const ctx = document.getElementById('myChart');
 const myChart = new Chart(ctx, {
     type: 'doughnut',
@@ -50,6 +50,7 @@ const myChart = new Chart(ctx, {
           }
     }
 });
+// 사료음수현황
 const chartArea = document.getElementById('myLineChart').getContext('2d');
 // 차트를 생성한다. 
 const myLineChart = new Chart(chartArea, {
@@ -114,4 +115,3 @@ const myLineChart = new Chart(chartArea, {
           }
     }
 });
-

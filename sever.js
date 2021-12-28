@@ -26,3 +26,6 @@ app.get('/', function (req, res){
 app.get('/Farmstatus', function (req, res){
     res.render('Farmstatus.html')
 });
+app.get('/Farmdong', function (req, res){
+    res.render('Farmdong.html')
+});

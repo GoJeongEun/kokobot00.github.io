@@ -1,12 +1,5 @@
-.Boxcustom {
-    box-sizing: border-box;
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background: white;
-}
-.mainCon {
-    height: 100% !important;
-}
+
+
 .topDongbox {
     background: white;
     height: 80px;
@@ -98,6 +91,7 @@ li.topDongItem::after {
 .topDongItem:last-child::after{
     background: transparent;
 }
+
 /* 이벤트카드슬라이더 */
 .eventSlide {
     background: white;
@@ -174,6 +168,7 @@ li.eventItem div {
 }
 .newCalendarTwo {
     margin-top: 25px;
+    width: 60%;
 }
 .newCalendarT {
     padding: 0.5rem;
@@ -192,9 +187,13 @@ li.eventItem div {
     line-height: 2.2em;
     border-radius: 50%;
     display: inline-block;   
+    text-align: center;
+}
+.CalendarTable table thead td{
+    text-align: center;
 }
 .CalendarTable table {
-    border-bottom: 1px solid #ddda;
+    border-bottom: 1px solid #ddd;
 }
 .TableTopTitle {
     margin: 0.8rem 0;
@@ -204,6 +203,9 @@ li.eventItem div {
 }
 .StitleL .font-g {
     font-size: 1.2rem;
+    position: absolute;
+    margin-top: -27px;
+    margin-left: 21px;
 }
 .ScheduleT div {
     float: left;
@@ -215,4 +217,63 @@ li.eventItem div {
 input#Sucstom {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+li.ScheduleItem .ScheduleT {
+    float: left;
+}
+.ScheduleT {
+    width: 100%;
+}
+input#Scustom01 {
+    display: none;
+}
+input#Scustom02 {
+    display: none;
+}
+label[for="Scustom01"] {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #1672ec;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+label[for="Scustom02"] {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #2AB930;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+input[id="Scustom01"]:checked + label[for="Scustom01"]::after {
+    content:'✔';
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 0;
+    top:0;
+    background: #1672EC;
+}
+input[id="Scustom02"]:checked + label[for="Scustom02"]::after{
+    content:'✔';
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 0;
+    top:0;
+    background: #1672EC;
+}
+#inputcustom01 { 
+   position: absolute;
+   margin-top: -27px;
+   margin-left: 21px;
 }
