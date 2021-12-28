@@ -248,29 +248,29 @@ label[for="Scustom02"] {
     border-radius: 5px;
     position: relative;
 }
-input[id="Scustom01"]:checked + label[for="Scustom01"]::after {
+input[id="Scustom01"]:checked ~ label[for="Scustom01"]::after {
     content:'✔';
-    font-size: 25px;
-    width: 30px;
-    height: 30px;
+    font-size: 8px;
+    width: 11px;
+    height: 11px;
     text-align: center;
     color: white;
     position: absolute;
     left: 0;
     top:0;
-    background: #1672EC;
+    background: #1672ec;
 }
 input[id="Scustom02"]:checked + label[for="Scustom02"]::after{
     content:'✔';
-    font-size: 25px;
-    width: 30px;
-    height: 30px;
+    font-size: 9px;
+    width: 11px;
+    height: 11px;
     text-align: center;
     color: white;
     position: absolute;
     left: 0;
     top:0;
-    background: #1672EC;
+    background: #2AB930;
 }
 #inputcustom01 { 
    position: absolute;

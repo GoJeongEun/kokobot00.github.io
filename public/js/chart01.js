@@ -139,7 +139,6 @@ const  dieoutChart= new Chart(ChartC, {
            
             y: {
                 beginAtZero: true,
-                display:false
             }
         },
         plugins: {
@@ -188,7 +187,6 @@ const  WeightChart= new Chart(ChartD, {
            
             y: {
                 beginAtZero: true,
-                display:false
             }
         },
         plugins: {
@@ -238,7 +236,6 @@ const  feedChart= new Chart(ChartE, {
            
             y: {
                 beginAtZero: true,
-                display:false
             }
         },
         plugins: {
@@ -287,7 +284,6 @@ const  waterChart= new Chart(ChartF, {
            
             y: {
                 beginAtZero: true,
-                display:false
             }
         },
         plugins: {
@@ -337,7 +333,6 @@ const  temperatureChart= new Chart(ChartG, {
            
             y: {
                 beginAtZero: true,
-                display:false
             }
         },
         plugins: {
@@ -369,7 +364,7 @@ const  humidityChart= new Chart(ChartH, {
         datasets: [{  
             // ⑤dataset의 이름(String)
             label: '습도',
-            // ⑥dataset값(Array)
+            //  dataset값(Array)
             data: [25, 26, 25.5, 26, 26.5, 25.5, 25],
 
             // ⑦dataset의 배경색(rgba값을 String으로 표현)
@@ -386,7 +381,7 @@ const  humidityChart= new Chart(ChartH, {
            
             y: {
                 beginAtZero: true,
-                display:false
+            
             }
         },
         plugins: {
@@ -406,3 +401,4 @@ const  humidityChart= new Chart(ChartH, {
           }
     }
 });
+
