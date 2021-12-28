@@ -29,3 +29,6 @@ app.get('/Farmstatus', function (req, res){
 app.get('/Farmdong', function (req, res){
     res.render('Farmdong.html')
 });
+app.get('/traceabiltty', function (req, res){
+    res.render('traceabiltty.html')
+});
