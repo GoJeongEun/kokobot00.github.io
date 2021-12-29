@@ -32,3 +32,6 @@ app.get('/Farmdong', function (req, res){
 app.get('/traceabiltty', function (req, res){
     res.render('traceabiltty.html')
 });
+app.get('/access_management', function (req, res){
+    res.render('access_management.html')
+});
