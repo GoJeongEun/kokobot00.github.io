@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "chart": "^0.1.2",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "ejs": "^3.1.6",
     "express": "^4.17.2"
   },
