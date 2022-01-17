@@ -1,7 +1,9 @@
+p {
+    font-family: 'Manrope', sans-serif;
+}
 .accessbox {
-    background: white;
-    height: 80px;
-    padding: 0rem 1rem;
+    /* background: white; */
+    height: 90px;
     width: 100%;
     /* box-sizing: border-box;
     box-shadow: 0px 2px 12px rgb(0 0 0 / 10%);
@@ -10,9 +12,84 @@
 .access {
     display: flex;
     margin: 0;
-    justify-content: flex-start;
-    padding: 1.5rem;
+    justify-content: space-around;
+    padding: 0.7rem 1.5rem;
     flex-wrap: nowrap;
-    height: 80px;
+    height: 90px;
     width: 100%;
+}
+li.middle_title p {
+    margin-left: 35px;
+}
+.middle_title::before {
+    content: '';
+    width: 27px;
+    height: 27px;
+    background-image: url(/icon/inout.png);
+    position: absolute;
+    background-size: 25px;
+    background-repeat: no-repeat;
+}   
+/* 상단탑 이벤트 바 */
+.accessT p {
+    margin: 0;
+    text-align: center;
+}
+.accessT .eventTitle {
+    color: #606266;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.accessT > .num {
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.accessT .compare.down {
+    color: #DA100B;
+
+}
+.accessT .compare{
+    color: #1672EC;
+    font-weight: 600;
+}
+.accessT .compare.up {
+    color: #1F8B24;
+}
+.accessCar {
+    margin-top: 25px;
+}
+.datesearch {
+    height: 38px;
+    padding: 0 1.5rem;
+    background: #1672EC;
+    border: 1px solid #e4e7ed;
+    color: white;
+    border-radius: 4px;
+}
+.carTitleBox {
+    margin-top: 10px;
+}
+.carTitleBox div {
+    display: flex;
+    justify-content: space-between;
+}
+span.searchIcon {
+    position: absolute;
+    padding: 0.7rem;
+}
+.iconCon input {
+    height: 38px;
+}
+.qrbox {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 6%), 0px 3px 8px rgb(0 0 0 / 15%);
+    border-radius: 5px;
+}
+.qrbox li.qrstyle img {
+    padding: 0.7rem;
 }
