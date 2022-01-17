@@ -19,7 +19,7 @@
     background: #EBF2FF;
 }
 .chickenTitle p {
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     margin: 0;
 }
 .chickenTitle p:last-child{
