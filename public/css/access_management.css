@@ -61,12 +61,14 @@ li.middle_title p {
     margin-top: 25px;
 }
 .datesearch {
-    height: 38px;
+    height: 32px;
     padding: 0 1.5rem;
     background: #1672EC;
     border: 1px solid #e4e7ed;
     color: white;
     border-radius: 4px;
+    border: 1px solid #1672ec;
+    margin-left: 5px;
 }
 .carTitleBox {
     margin-top: 10px;
@@ -74,13 +76,19 @@ li.middle_title p {
 .carTitleBox div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 span.searchIcon {
     position: absolute;
-    padding: 0.7rem;
+    padding: 0.4rem;
+}
+span.searchIcon i {
+    width: 15px;
+    margin-left: 5px;
 }
 .iconCon input {
-    height: 38px;
+    height: 32px;
+    width: 180px;
 }
 .qrbox {
     width: 70px;
@@ -92,4 +100,41 @@ span.searchIcon {
 }
 .qrbox li.qrstyle img {
     padding: 0.7rem;
+}
+.carImgbox {
+    margin: 7px 0px;
+}
+li.carImg img {
+    width: 100%;
+}
+.carInputBox div {
+    float: left;
+}
+.carRight {
+    width: 50%;
+}
+.carLeft {
+    width: 50%;
+}
+.carLeft p {
+    width: 95%;
+    font-weight: 500;
+    color: #000;
+}
+.carLeft p input {
+    width: 100%;
+    height: 35px;
+    color: #333;
+    font-weight: 300;
+}
+.carRight p {
+    width: 95%;
+    font-weight: 500;
+    color: #000;    
+}
+.carRight p textarea {
+    width: 100%;
+    height: 172px;
+    color: #333;
+    font-weight: 300;
 }
