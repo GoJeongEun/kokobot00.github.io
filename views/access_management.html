@@ -153,14 +153,164 @@
                         </li>
                     </div>
                     <div class="carInputBox">
-                        <p class="input 50">차량번호<input type="text"></p>
-                        <p class="input 50">입차시간<input type="datetime-local" name="Arrival-time" value="2022-01-17T19:30"></p>
-                        <p class="input 50">출차시간<input type="datetime-local" name="Arrival-time" value="2022-01-17T20:30"></p>
-                        <p class="input 50">
-                            방문목적
-                             <input type="text" value="" placeholder="방문목적을 입력해주세요.">
-                        </p>
-                    </div>    
+                        <div class="carLeft">
+                            <p class="input 50">차량번호<input type="text" value="21호1004"></p>
+                            <p class="input 50">입차시간<input type="datetime-local" name="Arrival-time"
+                                    value="2022-01-17T19:30"></p>
+                            <p class="input 50">출차시간<input type="datetime-local" name="Arrival-time"
+                                    value="2022-01-17T20:30"></p>
+                        </div>
+                        <div class="carRight">
+                            <p class="input 50 R">
+                                방문목적
+                                <textarea name="" id="" cols="30"></textarea>
+                                <!-- <input type="text" value="" placeholder="방문목적을 입력해주세요."> -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainConBox col-lg-8" >
+                    <ul class="tableBox">
+                        <div class="tabContainer">
+                            <div class="tabBox">
+                                <li class="tab active">
+                                    <a href="#">1일</a>
+                                </li>
+                                <li class="tab">
+                                    <a href="#">7일</a>
+                                </li>
+                                <li class="tab">
+                                    <a href="#">30일</a>
+                                </li>
+                            </div>
+                        </div>
+                        <table class="farmTable">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th>소속</th>
+                                    <th>성명</th>
+                                    <th>방문인원</th>
+                                    <th>연락처</th>
+                                    <th>입차시간</th>
+                                    <th>출차시간</th>
+                                    <th>12시간이전방문지</th>
+                                    <th>방문목적</th>
+                                    <th>차량번호</th>
+                                    <th>방문수락여부</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>공무원</td>
+                                    <td>홍길동</td>
+                                    <td>2명</td>
+                                    <td>010-3330-0333</td>
+                                    <td>15:00</td>
+                                    <td>16:00</td>
+                                    <td>천안</td>
+                                    <td>전등나감</td>
+                                    <td>21마1452</td>
+                                    <td><a href="#">수정</a><a href="#">편집</a><a href="#">삭제</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>공무원</td>
+                                    <td>홍길동</td>
+                                    <td>2명</td>
+                                    <td>010-3330-0333</td>
+                                    <td>15:00</td>
+                                    <td>16:00</td>
+                                    <td>천안</td>
+                                    <td>전등나감</td>
+                                    <td>21마1452</td>
+                                    <td><a href="#">수정</a><a href="#">편집</a><a href="#">삭제</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>공무원</td>
+                                    <td>홍길동</td>
+                                    <td>2명</td>
+                                    <td>010-3330-0333</td>
+                                    <td>15:00</td>
+                                    <td>16:00</td>
+                                    <td>천안</td>
+                                    <td>전등나감</td>
+                                    <td>21마1452</td>
+                                    <td><a href="#">수정</a><a href="#">편집</a><a href="#">삭제</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>공무원</td>
+                                    <td>홍길동</td>
+                                    <td>2명</td>
+                                    <td>010-3330-0333</td>
+                                    <td>15:00</td>
+                                    <td>16:00</td>
+                                    <td>천안</td>
+                                    <td>전등나감</td>
+                                    <td>21마1452</td>
+                                    <td><a href="#">수정</a><a href="#">편집</a><a href="#">삭제</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>공무원</td>
+                                    <td>홍길동</td>
+                                    <td>2명</td>
+                                    <td>010-3330-0333</td>
+                                    <td>15:00</td>
+                                    <td>16:00</td>
+                                    <td>천안</td>
+                                    <td>전등나감</td>
+                                    <td>21마1452</td>
+                                    <td><a href="#">수정</a><a href="#">편집</a><a href="#">삭제</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </ul>
+                </div>
+                <div class="accessCar col-lg-3 Boxcustom">
+                    <div class="carTitleBox two">
+                        <div class="carTitle">
+                            <h4>출입차량관리</h4>
+                            <div class="searchBox">
+                                <div class="iconCon">
+                                    <span class="searchIcon"><i class="fas fa-search"></i></span>
+                                    <input type="text">
+                                    <button class="datesearch">검색</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carImgbox">
+                        <div class="qrbox">
+                            <li class="qrstyle">
+                                <a href="#popup">
+                                    <img src="/img/qrimg.png" alt="qrcord">
+                                </a>
+                            </li>
+                        </div>
+                        <li class="carImg">
+                            <img src="/img/car02.png" alt="carImg">
+                        </li>
+                    </div>
+                    <div class="carInputBox">
+                        <div class="carLeft">
+                            <p class="input 50">차량번호<input type="text" value="21호1004"></p>
+                            <p class="input 50">입차시간<input type="datetime-local" name="Arrival-time"
+                                    value="2022-01-17T19:30"></p>
+                            <p class="input 50">출차시간<input type="datetime-local" name="Arrival-time"
+                                    value="2022-01-17T20:30"></p>
+                        </div>
+                        <div class="carRight">
+                            <p class="input 50 R">
+                                방문목적
+                                <textarea name="" id="" cols="30"></textarea>
+                                <!-- <input type="text" value="" placeholder="방문목적을 입력해주세요."> -->
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
