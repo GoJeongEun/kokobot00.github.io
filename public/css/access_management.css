@@ -161,6 +161,10 @@ li.carImg img {
     color: #606266;
 }
 .tabBox li.active {
-    color: white;
+    color: white ;
     background: #1672EC;
 }
+.tabBox li.active a {
+    color: white;
+}
+
