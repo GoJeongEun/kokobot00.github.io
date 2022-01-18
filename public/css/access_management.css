@@ -151,20 +151,41 @@ li.carImg img {
 .mainConBox {
     margin-top: 25px;
 }
-.tabBox {
+.tabcon {
     display: flex;
 }
 .tabBox li {
     padding: 0.5rem 1.5rem;
     background: #fff;
     border: 1px solid #dadada;
+}
+.tabBox li {
     color: #606266;
 }
 .tabBox li.active {
-    color: white ;
     background: #1672EC;
+    border: 1px solid #1672EC;
 }
 .tabBox li.active a {
     color: white;
+    font-weight: bold;
 }
+.tabContainer {
+    display: block;
+}
+.tabBox {
+    display: flex;
+    justify-content: space-between;
+}
+.tabTitle h4{
+    font-weight: bold;
+}
+.tabContainer {
+    display: block;
+}
+.tabBox {
+    display: flex;
+    justify-content: space-between;
+}
+
 
