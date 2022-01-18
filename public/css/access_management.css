@@ -151,13 +151,15 @@ li.carImg img {
 .mainConBox {
     margin-top: 25px;
 }
-.tabBox {
+.tabcon {
     display: flex;
 }
 .tabBox li {
     padding: 0.5rem 1.5rem;
     background: #fff;
     border: 1px solid #dadada;
+}
+.tabBox li {
     color: #606266;
 }
 .tabBox li.active {
@@ -167,4 +169,12 @@ li.carImg img {
 .tabBox li.active a {
     color: white;
 }
+.tabContainer {
+    display: block;
+}
+.tabBox {
+    display: flex;
+    justify-content: space-between;
+}
+
 
