@@ -1,0 +1,37 @@
+/* 탑 이벤트 카드 */
+.TopEventCon {
+    display: flex;
+    flex-wrap: nowrap;
+}
+ul.Event {
+    display: contents;
+}
+.TopEventItem {
+    text-align: center;
+    padding: 1rem;
+}
+.eventTitle {
+    color: #606266;
+}
+.TopEventItem p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.TopEventItem .num {
+    font-weight:800; 
+    color: black;
+    font-size: 2rem;
+}
+.Event > li:not(:last-child) {
+    margin-right: 1%;
+}
+.Event > li > .compare{
+    margin-bottom: 0;
+}
+.Event > li:nth-child(odd) .compare {
+    color: #DA100B;
+}
+.Event > li:nth-child(even) .compare {
+    color: #2AB930;
+}
