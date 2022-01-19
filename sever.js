@@ -35,3 +35,6 @@ app.get('/traceabiltty', function (req, res){
 app.get('/access_management', function (req, res){
     res.render('access_management.html')
 });
+app.get('/GP_management', function (req, res){
+    res.render('GP_management.html')
+});
