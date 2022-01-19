@@ -13,7 +13,8 @@
      <!-- Custom Styles-->
      <link href="css/custom-styles.css" rel="stylesheet" />
      <link href="css/common.css" rel="stylesheet" />
-     <link href="css/traceabiltty.css" rel="stylesheet" />
+     <link href="css/GPmanagement.css" rel="stylesheet" />
+     <link href="css/topEventcard.css" rel="stylesheet" />
      <!-- calender css, js -->
      <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
      <link href="css/calender.css" rel="stylesheet" />
@@ -62,42 +63,42 @@
                         <div class="TopEventCon">
                             <ul class="Event">
                                 <li class="TopEventItem col-lg-2 Boxcustom">
-                                    <p class="eventTitle">닭 입고</p>
-                                    <p class="num">400,000</p>
+                                    <p class="eventTitle">계란 입고</p>
+                                    <p class="num">200,000</p>
                                     <p class="compare">전일대비 50,000
                                         <i class="fas fa-caret-down"></i>
                                     </p>
                                 </li>
                                 <li class="TopEventItem col-lg-2 Boxcustom">
-                                    <p class="eventTitle">닭 출고</p>
+                                    <p class="eventTitle">계란 출고</p>
                                     <p class="num">500,000</p>
                                     <p class="compare">전일대비 100,000
                                         <i class="fas fa-caret-up"></i>
                                     </p>
                                 </li>
                                 <li class="TopEventItem col-lg-2 Boxcustom">
-                                    <p class="eventTitle">계란 입고 수</p>
+                                    <p class="eventTitle">월 누적 계란입고</p>
                                     <p class="num">200,000</p>
                                     <p class="compare">전일대비 500
                                         <i class="fas fa-caret-down"></i>
                                     </p>
                                 </li>
                                 <li class="TopEventItem col-lg-2 Boxcustom">
-                                    <p class="eventTitle">계란 출고 수</p>
+                                    <p class="eventTitle">월 누적 계란출고</p>
                                     <p class="num">500,000</p>
                                     <p class="compare">전일대비 100,000
                                         <i class="fas fa-caret-up"></i>
                                     </p>
                                 </li>
                                 <li class="TopEventItem col-lg-2 Boxcustom">
-                                    <p class="eventTitle">이력 신고 전</p>
+                                    <p class="eventTitle">계란 재고</p>
                                     <p class="num">500,000</p>
                                     <p class="compare">전일대비 150,000
                                         <i class="fas fa-caret-down"></i>
                                     </p>
                                 </li>
                                 <li class="TopEventItem col-lg-2 Boxcustom">
-                                    <p class="eventTitle">이력 신고 후</p>
+                                    <p class="eventTitle">계란 폐기량</p>
                                     <p class="num">430,000</p>
                                     <p class="compare">전일대비 100,000
                                         <i class="fas fa-caret-up"></i>
@@ -108,17 +109,18 @@
                         <div class="ChartCon">
                             <ul class="chartBox">
                                 <li class="chartItem col-lg-4 Boxcustom">
-                                    <canvas id="chickenInoutChart"></canvas>
+                                    <canvas id="normaleggChart"></canvas>
                                 </li>
                                 <li class="chartItem col-lg-4 Boxcustom">
-                                    <canvas id="eggInoutChart"></canvas>
+                                    <canvas id="abnormaleggChart"></canvas>
                                 </li>
                                 <li class="chartItem col-lg-4 Boxcustom">
-                                    <canvas id="traceabilttyChart"></canvas>
+                                    <canvas id="HDchart"></canvas>
+                                    <canvas id="HHchart"></canvas>
                                 </li>
                             </ul>
                         </div>
-                        <div class="mainConBox col-lg-12" style="width: 100%;">
+                        <div class="mainConBox col-lg-6" style="width: 100%;">
                             <ul class="tableBox">
                                 <div class="tabContainer">
                                     <li class="tabBox">
@@ -173,7 +175,7 @@
                                    <tr>
                                     <td><input type="checkbox"></td>
                                     <td>전송완료</td>
-                                      <td>21.12.25 15:21:22</td>ㄴ
+                                      <td>21.12.25 15:21:22</td>
                                       <td>입고</td>
                                       <td>신고</td>
                                       <td>21.11.15</td>
@@ -255,7 +257,6 @@
     <script src="js/map.js"></script>
      <!-- chart.js -->
      <script type="text/javascript" src="js/chartbase.js"></script>
-     <script type="text/javascript" src="js/chart.js"></script>
-     <script type="text/javascript" src="js/chart02.js"></script>
+     <script type="text/javascript" src="js/gpchart.js"></script>
 </body>
 </html>

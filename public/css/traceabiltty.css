@@ -10,7 +10,7 @@
 li.middle_title p {
     margin-left: 35px;
 }
-/* 탑 이벤트 카드 */
+/* 탑 이벤트 카드
 .TopEventCon {
     display: flex;
     flex-wrap: nowrap;
@@ -46,11 +46,14 @@ ul.Event {
 }
 .Event > li:nth-child(even) .compare {
     color: #2AB930;
-}
+} */
 .ChartCon {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-top: 20px;
+}
+.chartItem {
+    width: 32.666666%;
 }
 .chartBox {
     display: contents;
