@@ -60,6 +60,7 @@ li.middle_title p {
 .accessCar {
     margin-top: 25px;
     margin-right: 25px;
+    width: 28%;
 }
 .datesearch {
     height: 32px;
@@ -107,14 +108,14 @@ span.searchIcon i {
     padding: 0.7rem;
 }
 .carImgbox {
-    margin: 7px 0px;
+    margin: 17px 0px;
 }
 li.carImg {
     display: flex;
     justify-content: center;
 }
 li.carImg img {
-    width: 80%;
+    width: 60%;
 }
 .carInputBox div {
     float: left;
@@ -126,15 +127,17 @@ li.carImg img {
     width: 50%;
 }
 .carLeft p {
-    width: 95%;
+    width: 100%;
     font-weight: 500;
     color: #000;
+    display: flex;
 }
 .carLeft p input {
-    width: 100%;
+    width: 66%;
     height: 30px;
     color: #333;
     font-weight: 300;
+    margin-left: 5px;
 }
 .carRight p {
     width: 95%;
@@ -143,13 +146,18 @@ li.carImg img {
 }
 .carRight p textarea {
     width: 100%;
-    height: 155px;
+    height: 85px;
     color: #333;
     font-weight: 300;
+}
+.carImg.two img {
+    width: 50%;
 }
 /* 방문자 테이블 */
 .mainConBox {
     margin-top: 25px;
+    width: 70%;
+    margin-right: 0;
 }
 .tabcon {
     display: flex;
@@ -162,6 +170,12 @@ li.carImg img {
 .tabBox li {
     color: #606266;
 }
+.tabBox li:first-child {
+    border-radius: 4px 0px 0px 4px;
+}
+.tabBox li:last-child {
+    border-radius: 0px 4px 4px 0px;
+}
 .tabBox li.active {
     background: #1672EC;
     border: 1px solid #1672EC;
@@ -172,6 +186,10 @@ li.carImg img {
 }
 .tabContainer {
     display: block;
+}
+.flex-end {
+    display: flex;
+    align-items: center;
 }
 .tabBox {
     display: flex;
@@ -186,6 +204,9 @@ li.carImg img {
 .tabBox {
     display: flex;
     justify-content: space-between;
+}
+.searchBox {
+    margin-right: 10px;
 }
 
 
