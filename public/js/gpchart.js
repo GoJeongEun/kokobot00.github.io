@@ -130,7 +130,7 @@ const ChartC = document.getElementById('HDchart');
 const HDchart = new Chart(ChartC, {
     type: 'doughnut',
     data: {
-        labels: ['HD산란율', 'none'],
+        labels: ['HD산란율'],
         datasets: [{
             label: '',
             data: [90, 10],
@@ -217,5 +217,165 @@ const HHchart = new Chart(ChartD, {
                 }
               }
           }
+    }
+});
+// gp 라인 사료음수비 생산량
+const ChartE = document.getElementById('Feedchart');
+const Feedchart = new Chart(ChartE, {
+    type: 'line',
+    data: {
+        labels: ['1일','2일','3일','4일','5일','6일','7일'],
+        datasets: [{
+            label: '생산량',
+            data: [900, 1000, 1500, 1400, 1200, 1300, 1250],
+            backgroundColor: [
+               
+                'rgba(255, 24, 163, 1)',
+               
+            ],
+            borderColor: [
+                'rgba(255, 24, 163, 1)',
+            ],
+            borderWidth: 1,
+            tension: 0.4
+        },
+        {
+            label: '사료',
+            data: [600, 700, 600, 700, 700, 650, 700],
+            backgroundColor: [
+               
+                'rgba(95, 46, 234, 1)',
+               
+            ],
+            borderColor: [
+                'rgba(95, 46, 234, 1)',
+            ],
+            borderWidth: 1,
+            tension: 0.4
+        },
+        {
+            label: '음수',
+            data: [1200, 1150, 1200, 1150, 1120, 1130, 1200],
+            backgroundColor: [
+               
+                'rgba(22, 114, 236, 1)',
+               
+            ],
+            borderColor: [
+                'rgba(22, 114, 236, 1)',
+            ],
+            borderWidth: 1,
+            tension: 0.4
+        },
+    ]
+    },
+    options: {
+        scales: {
+           
+            y: {
+                beginAtZero: true,
+            }
+        },
+        plugins: {
+            title: {
+              display: true,
+              text: "사료음수현황",
+              font: {
+                size: 18
+              }
+            },
+            legend: {
+                display: true,
+                position: 'top'
+              }
+          }
+    }
+});
+
+// gp 라인 생산능력 차트
+const ChartF = document.getElementById('PDTchart');
+const PDTchart = new Chart(ChartF, {
+    type: 'line',
+    data: {
+        labels: ['16주','18주','22주','24주','26주','28주','30주'],
+        datasets: [{
+            label: '오늘 산란수',
+            yAxisID: 'A',
+            data: [900, 1000, 1500, 1400, 1200, 1300, 1250],
+            backgroundColor: [
+               
+                'rgba(31, 139, 36, 1)',
+               
+            ],
+            borderColor: [
+                'rgba(31, 139, 36, 1)',
+            ],
+            borderWidth: 1,
+            tension: 0.4
+        },
+        {
+            label: '주평균산란율',
+            yAxisID: 'B',
+            data: [70, 75, 78, 80, 82, 80, 85],
+            backgroundColor: [
+               
+                'rgba(95, 46, 234, 1)',
+               
+            ],
+            borderColor: [
+                'rgba(95, 46, 234, 1)',
+            ],
+            borderWidth: 1,
+            tension: 0.4
+        },
+        {
+            label: '달평균산란율',
+            yAxisID: 'B',
+            data: [75, 78, 80, 82, 85, 85, 87],
+            backgroundColor: [
+               
+                'rgba(22, 114, 236, 1)',
+               
+            ],
+            borderColor: [
+                'rgba(22, 114, 236, 1)',
+            ],
+            borderWidth: 1,
+            tension: 0.4
+        },
+    ]
+    },
+    options: {
+        scales: {
+           
+            yAxes: {
+                id:'B',
+                type:'linear',
+                beginAtZero: true,
+                position:'right',
+                ticks: {
+                    min:0,
+                    max:100,
+                    
+                    fontColor:'#333333',
+                    callback:function(value, index, values) {
+                        return value + '%';
+                    }
+                }
+            },
+        },
+        plugins: {
+            title: {
+              display: true,
+              text: "사료음수현황",
+              font: {
+                size: 18
+              }
+            },
+            legend: {
+                display: true,
+                position: 'top'
+              }
+          },
     }
 });
