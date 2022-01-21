@@ -1,0 +1,64 @@
+.middle_title::before {
+    content: '';
+    width: 27px;
+    height: 27px;
+    background-image: url(/icon/medicineIcon.png);
+    position: absolute;
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+li.middle_title p {
+    margin-left: 35px;
+}
+.mdConBox  {
+    margin-top: 15px;
+  
+}
+.mdConBox:not(:nth-child(odd)){
+    margin-right: 1%;
+}
+.mdConBox
+.tabContainer {
+    display: block;
+}
+.tabTitle h4 {
+    font-weight: bold;
+}
+li.tabBox {
+    justify-content: start;
+    width: 46%;
+}
+.tabGroup {
+    display: flex;
+    justify-content: space-between;
+}
+.datesearch {
+    height: 38px;
+    padding: 0 1.5rem;
+    background: #1672EC;
+    border: 1px solid #e4e7ed;
+    color: white;
+    border-radius: 4px;
+}
+li.dateBox input {
+    vertical-align: bottom;
+    line-height: 31px;
+}
+li.dateBox input:first-child::before {
+    content: '-';
+    position: absolute;
+    margin-left: 159px;
+}
+li.dateBox input:first-child {
+    margin-right: 8px;
+}
+.tabContainer.flex {
+    display: flex;
+    justify-content: space-between;
+}
+/* 미디어태그 */
+@media (min-width: 1200px){
+.col-lg-6 {
+    width: 49.444444%;
+}
+}
