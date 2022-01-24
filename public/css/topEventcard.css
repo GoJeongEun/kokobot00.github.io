@@ -35,3 +35,9 @@ ul.Event {
 .Event > li:nth-child(even) .compare {
     color: #2AB930;
 }
+.compare.down {
+    color: #DA100B;
+}
+.compare.down i {
+    color: #DA100B;
+}

@@ -117,34 +117,34 @@
                                 </div>
                             </div>
                             <div class="tabGroup">
-                            <li class="tabBox">
-                                <div class="tabItem active">
-                                    <a href="#">전체</a>
-                                </div>
-                                <div class="tabItem">
-                                    <a href="#">백신</a>
-                                </div>
-                                <div class="tabItem">
-                                    <a href="#">영양제</a>
-                                </div>
-                                <div class="tabItem">
-                                    <a href="#">항생제</a>
-                                </div>
-                                <div class="tabItem">
-                                    <a href="#">소독제</a>
-                                </div>
-                                <div class="tabItem">
-                                    <a href="#">기타</a>
-                                </div>
-                            </li>
-                            <li class="dateBox">
-                                <input type="date" id="start" name="trip-start" value="2021-12-01" min="2022-01-01"
-                                    max="2022-12-31">
-                                <input type="date" id="start" name="trip-start" value="2021-12-31" min="2022-01-01"
-                                    max="2022-12-31">
-                                <button class="datesearch">검색</button>
-                            </li>
-                        </div>
+                                <li class="tabBox">
+                                    <div class="tabItem active">
+                                        <a href="#">전체</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">백신</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">영양제</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">항생제</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">소독제</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">기타</a>
+                                    </div>
+                                </li>
+                                <li class="dateBox">
+                                    <input type="date" id="start" name="trip-start" value="2021-12-01" min="2022-01-01"
+                                        max="2022-12-31">
+                                    <input type="date" id="start" name="trip-start" value="2021-12-31" min="2022-01-01"
+                                        max="2022-12-31">
+                                    <button class="datesearch">검색</button>
+                                </li>
+                            </div>
                         </div>
                         <table class="farmTable">
                             <thead>
@@ -253,6 +253,15 @@
                                     <td><a href="#판매">수정</a></td>
                                 </tr>
                                 <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>백신</td>
+                                    <td>안아파백신</td>
+                                    <td>1L/1병</td>
+                                    <td>1-3일령 백신접종</td>
+                                    <td>냉장보관</td>
+                                    <td><a href="#판매">수정</a></td>
+                                </tr>
+                                <tr>
                                     <td><input type="checkbox"></td>
                                     <td>영양제</td>
                                     <td>아이잘커</td>
@@ -298,34 +307,36 @@
                             <div class="tabTitle">
                                 <h4>약품입출고관리</h4>
                             </div>
-                            <li class="dateBox">
-                                <input type="date" id="start" name="trip-start" value="2021-12-01" min="2022-01-01"
-                                    max="2022-12-31">
-                                <input type="date" id="start" name="trip-start" value="2021-12-31" min="2022-01-01"
-                                    max="2022-12-31">
-                                <button class="datesearch">검색</button>
-                            </li>
+                            <div class="tabGroup">
+                                <li class="tabBox">
+                                    <div class="tabItem active">
+                                        <a href="#">전체</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">백신</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">영양제</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">항생제</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">소독제</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">기타</a>
+                                    </div>
+                                </li>
+                                <li class="dateBox">
+                                    <input type="date" id="start" name="trip-start" value="2021-12-01" min="2022-01-01"
+                                        max="2022-12-31">
+                                    <input type="date" id="start" name="trip-start" value="2021-12-31" min="2022-01-01"
+                                        max="2022-12-31">
+                                    <button class="datesearch">검색</button>
+                                </li>
+                            </div>
                         </div>
-                        <li class="tabBox">
-                            <div class="tabItem active">
-                                <a href="#">전체</a>
-                            </div>
-                            <div class="tabItem">
-                                <a href="#">백신</a>
-                            </div>
-                            <div class="tabItem">
-                                <a href="#">영양제</a>
-                            </div>
-                            <div class="tabItem">
-                                <a href="#">항생제</a>
-                            </div>
-                            <div class="tabItem">
-                                <a href="#">소독제</a>
-                            </div>
-                            <div class="tabItem">
-                                <a href="#">기타</a>
-                            </div>
-                        </li>
                         <table class="farmTable">
                             <thead>
                                 <tr>
@@ -430,7 +441,7 @@
                         </table>
                     </ul>
                 </div>
-                <div class="mdConBox col-lg-4 Boxcustom">
+                <div class="mdConBox col-lg-3 Boxcustom ">
                     <ul class="tableBox">
                         <div class="tabContainer">
                             <div class="tabTitle">
@@ -488,9 +499,18 @@
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox" checked></td>
+                                    <td>14</td>
+                                    <td>백신</td>
+                                    <td>ND+IB 생독</td>
+                                    <td>음수</td>
+                                    <td>미접종</td>
+                                    <td><a href="#수정">수정</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
                                     <td>15</td>
                                     <td>백신</td>
-                                    <td>IBD 생독</td>
+                                    <td>IBD 중간독</td>
                                     <td>음수</td>
                                     <td>미접종</td>
                                     <td><a href="#수정">수정</a></td>
@@ -499,40 +519,42 @@
                         </table>
                     </ul>
                 </div>
-                <div class="mdConBox col-lg-6 Boxcustom">
+                <div class="mdConBox col-lg-7 Boxcustom">
                     <ul class="tableBox">
                         <div class="tabContainer">
                             <div class="tabTitle">
                                 <h4>약품사용내역</h4>
                             </div>
-                            <li class="dateBox">
-                                <input type="date" id="start" name="trip-start" value="2021-12-01" min="2022-01-01"
-                                    max="2022-12-31">
-                                <input type="date" id="start" name="trip-start" value="2021-12-31" min="2022-01-01"
-                                    max="2022-12-31">
-                                <button class="datesearch">검색</button>
-                            </li>
+                            <div class="tabGroup">
+                                <li class="tabBox">
+                                    <div class="tabItem active">
+                                        <a href="#">전체</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">백신</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">영양제</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">항생제</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">소독제</a>
+                                    </div>
+                                    <div class="tabItem">
+                                        <a href="#">기타</a>
+                                    </div>
+                                </li>
+                                <li class="dateBox">
+                                    <input type="date" id="start" name="trip-start" value="2021-12-01" min="2022-01-01"
+                                        max="2022-12-31">
+                                    <input type="date" id="start" name="trip-start" value="2021-12-31" min="2022-01-01"
+                                        max="2022-12-31">
+                                    <button class="datesearch">검색</button>
+                                </li>
+                            </div>
                         </div>
-                        <li class="tabBox">
-                            <div class="tabItem active">
-                                <a href="#">전체</a>
-                            </div>
-                            <div class="tabItem">
-                                <a href="#">백신</a>
-                            </div>
-                            <div class="tabItem">
-                                <a href="#">영양제</a>
-                            </div>
-                            <div class="tabItem">
-                                <a href="#">항생제</a>
-                            </div>
-                            <div class="tabItem">
-                                <a href="#">소독제</a>
-                            </div>
-                            <div class="tabItem">
-                                <a href="#">기타</a>
-                            </div>
-                        </li>
                         <table class="farmTable">
                             <thead>
                                 <tr>
@@ -631,10 +653,10 @@
                         </table>
                     </ul>
                 </div>
-            </div>
-            <div class="gpConBox col-lg-6 Boxcustom">
-                <div class="chart">
-                    <canvas id="medicineChart"></canvas>
+                <div class="mdConBox col-lg-5 Boxcustom">
+                    <div class="chart">
+                        <canvas id="medicineChart"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
@@ -657,4 +679,5 @@
     <script type="text/javascript" src="js/chartbase.js"></script>
     <script type="text/javascript" src="js/medicinechart.js"></script>
 </body>
+
 </html>

@@ -5,13 +5,14 @@ const  medicineChart= new Chart(ChartA, {
     type: 'bar',
     data: {
         // ③x축에 들어갈 이름들(Array)
-        labels: ['11.01', '11.02', '11.03', '11.04', '11.05', '11.06','11.07'],
+        labels: ['0-3일령', '4-7일령', '8-14일령', '15-21일령', '22-28일령', '29-35일령','42-48일령'],
         // ④실제 차트에 표시할 데이터들(Array), dataset객체들을 담고 있다.
         datasets: [{  
             // ⑤dataset의 이름(String)
             label: '생존율',
+            type:'line',
             // ⑥dataset값(Array)
-            data: [575, 485, 287, 192, 682, 487, 196],
+            data: [99, 97, 96, 95, 94, 93, 92],
 
             // ⑦dataset의 배경색(rgba값을 String으로 표현)
             backgroundColor: 'rgba(127, 127, 213, 1)',
@@ -25,7 +26,7 @@ const  medicineChart= new Chart(ChartA, {
              // ⑤dataset의 이름(String)
              label: '접종률',
              // ⑥dataset값(Array)
-             data: [475, 485, 295, 200, 707, 592, 291],
+             data: [50, 55, 60, 68, 75, 78, 85],
              // ⑦dataset의 배경색(rgba값을 String으로 표현)
              backgroundColor:['rgba(213, 127, 194, 1)'], 
              // ⑧dataset의 선 색(rgba값을 String으로 표현)

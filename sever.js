@@ -41,3 +41,9 @@ app.get('/GP_management', function (req, res){
 app.get('/medicine_management', function (req, res){
     res.render('medicine_management.html')
 });
+app.get('/feed_management', function (req, res){
+    res.render('feed_management.html')
+});
+app.get('/clinical_observation', function (req, res){
+    res.render('clinical_observation.html')
+});
