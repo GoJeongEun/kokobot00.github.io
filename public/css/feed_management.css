@@ -1,0 +1,144 @@
+/* 서브 헤더 아이콘 */
+.middle_title::before {
+    content: '';
+    width: 27px;
+    height: 27px;
+    background-image: url(/icon/feedIcon.png);
+    position: absolute;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+li.middle_title p {
+    margin-left: 35px;
+    margin-top: 2px;
+}
+.feedConBox {
+    margin-top: 20px;
+}
+.feedConBox:not(:last-child){
+    margin-right: 1%;
+}
+/* 사료잔량 */
+.feedTitle h4 {
+    font-weight: bold;
+    padding: 0.5rem 0rem;
+}
+.feedarea {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+.feedConBox:nth-child(2) .feedarea::before{
+    content: 'A';
+    position: absolute;
+    margin-top: 28px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.feedConBox:nth-child(2) .feedarea::after{
+    content: '28%';
+    position: absolute;
+    margin-top: 91px;
+    color: red;
+    font-weight: bold;
+}
+.feedConBox:nth-child(3) .feedarea::before{
+    content: 'B';
+    position: absolute;
+    margin-top: 28px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.feedConBox:nth-child(3) .feedarea::after{
+    content: '30%';
+    position: absolute;
+    margin-top: 91px;
+    color: red;
+    font-weight: bold;
+}
+.feedConBox:nth-child(4) .feedarea::before{
+    content: 'C';
+    position: absolute;
+    margin-top: 28px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.feedConBox:nth-child(4) .feedarea::after{
+    content: '30%';
+    position: absolute;
+    margin-top: 91px;
+    color: red;
+    font-weight: bold;
+}
+.feedConBox:nth-child(5) .feedarea::before{
+    content: 'D';
+    position: absolute;
+    margin-top: 28px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.feedConBox:nth-child(5) .feedarea::after{
+    content: '30%';
+    position: absolute;
+    margin-top: 91px;
+    color: red;
+    font-weight: bold;
+}
+.feedConBox:nth-child(6) .feedarea::before{
+    content: 'E';
+    position: absolute;
+    margin-top: 28px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.feedConBox:nth-child(6) .feedarea::after{
+    content: '30%';
+    position: absolute;
+    margin-top: 91px;
+    color: red;
+    font-weight: bold;
+}
+ul.infoBox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+li.infoItem {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+li.infoItem p:first-child {
+    background: #EBF2FF;
+    width: 40%;
+}
+li.infoItem p {
+    float: left;
+    width: 40%;
+    padding: 0.5rem;
+    margin: 0;
+    border-bottom: 1px solid #dadada;
+}
+/* 슬라이더 */
+.slider.slick-initialized.slick-slider {
+    width: 16.66666667%;
+}
+.slick-track {
+    width: 100%;
+}
+.slick-initialized .slick-slide {
+    width: 100%;
+}
+/* 사료관리 테이블  */
+.tabContainer {
+    justify-content: space-between;
+}
+.tabTitle h4 {
+    font-weight: bold;
+}
+@media (min-width: 1200px){
+    .col-lg-6 { 
+        width: 49.444444%;
+    }
+}

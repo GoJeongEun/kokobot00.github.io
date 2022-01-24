@@ -26,7 +26,6 @@ li.middle_title p {
 }
 li.tabBox {
     justify-content: start;
-    width: 46%;
 }
 .tabGroup {
     display: flex;
@@ -56,9 +55,32 @@ li.dateBox input:first-child {
     display: flex;
     justify-content: space-between;
 }
+/* 약품등록관리 */
+.newMedicine button {
+    background: #1672EC;
+    color: white;
+    padding: 0 1.5rem;
+    border-radius: 4px;
+    border: none;
+    height: 38px;
+}
+.mdConBox:nth-child(5) {
+    height: 382px;
+}
+.mdConBox:nth-child(7) {
+    height: 382px;
+}
+
 /* 미디어태그 */
 @media (min-width: 1200px){
 .col-lg-6 {
     width: 49.444444%;
+ }
+
+.mdConBox:nth-child(5) {
+    width: 32.222222%;
+ }
+ .mdConBox:nth-child(7){
+     width: 40.555555%;
 }
 }
