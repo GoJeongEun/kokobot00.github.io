@@ -75,6 +75,13 @@ ul.clinicalarea li {
     border-radius: 15px;
     padding: 1rem;
     margin: 1rem 0rem;
+    cursor: pointer;
+}
+ul.clinicalarea li:hover {
+    background: #F0F9FF;
+}
+ul.clinicalarea li:hover .iconBox {
+    background: rgba(197, 220, 250, 0.5);
 }
 li.clinicalItem div {
     float: left;
@@ -113,9 +120,16 @@ ul.clinicalarea {
 .clinicalConBox.col-lg-3 {
     margin-right: 1%;
 }
+.clinicalT i {
+    cursor: pointer;
+}
+
 /* 미디어태그 */
 @media (min-width: 1200px){
     .clinicalConBox.col-lg-3 {
         width: 24%;   
+    }
+    .mainCon{
+        min-height: 727px;
     }
 }

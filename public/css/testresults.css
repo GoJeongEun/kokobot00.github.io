@@ -1,0 +1,177 @@
+/* 서브 헤더 아이콘 */
+.middle_title::before {
+    content: '';
+    width: 27px;
+    height: 27px;
+    background-image: url(/icon/testresultsIcon.png);
+    position: absolute;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+li.middle_title p {
+    margin-left: 35px;
+    margin-top: 2px;
+}
+ul.customerBox{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+ul.customerBox li {
+    padding: 0.5rem 1rem;
+    margin: 0rem 1rem;
+    box-shadow: 0px 0.63px 1.26px rgba(97, 97, 97, 0.2),0px 1.26px 2.52px rgba(97, 97, 97, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+ul.customerBox li:first-child {
+    background: #F0F9FF;
+}
+.profile {
+    display: flex;
+}
+.profile img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+.profile h4 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.customerButton {
+    display: flex;
+}
+.customerButton button {
+    border: 1.5px solid #e4e7ed;
+    background: white;
+    color: #606266;
+    padding: 0.8rem;
+    border-radius: 4px;
+}
+.customerButton i {
+    color:#1672EC ;
+    margin-right: 5px;
+}
+.customerarea {
+    display: flex;
+}
+/* 최근 시험성적서 */
+.trCon {
+    margin-top: 20px;
+}
+.trTitle {
+    border-bottom: 1px solid #dadada;
+}
+.trTitle h3 {
+    font-weight: bold;
+    margin: 12px 5px;
+    font-size: 2rem;
+}
+.trConBox {
+    padding: 1rem 0;
+}
+.trConItembox {
+    display: flex;
+}
+.trConItembox li {
+    margin: 0.9rem;
+    border: 1px solid #dadada;
+    border-radius: 15px;
+}
+.trItem .ImgBox::after {
+    width: 35px;
+    height: 35px;
+    content: '';
+    background: rgba(224, 224, 224, 0.7);
+    position: absolute;
+    border-radius: 20px;
+    margin-left: -42px;
+    margin-top: 5px;
+    background-image: url('/icon/tag.png');
+    background-size: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.trTextBox {
+    padding: 1rem;
+}
+.trTextBox p {
+    margin: 0;
+    color: #414141;
+    font-family: 'Manrope', sans-serif;
+}
+.trTextBox p:not(:last-child) {
+    font-weight: bold;
+    color: black;
+}
+/*  */
+.clinicalConBox {
+    margin-top: 20px;
+}
+/* 탭 */
+.tabContainer {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: baseline;
+}
+.tabTitle h4 {
+    font-weight: bold;
+}
+li.tabBox {
+    justify-content: start;
+}
+.tabGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tabGroup li {
+    cursor: pointer;
+}
+.datesearch {
+    height: 38px;
+    padding: 0 1.5rem;
+    background: #1672EC;
+    border: 1px solid #e4e7ed;
+    color: white;
+    border-radius: 4px;
+}
+li.dateBox input {
+    vertical-align: bottom;
+    line-height: 31px;
+}
+li.dateBox {
+    margin-left: 5px;
+    cursor: pointer;
+}
+li.dateBox input:first-child::before {
+    content: '-';
+    position: absolute;
+    margin-left: 159px;
+}
+li.dateBox input:first-child {
+    margin-right: 8px;
+}
+.tabButton div {
+    display: flex;
+    align-items: baseline;
+}
+.trButton p {
+    margin: 0;
+    font-weight: 500;
+}
+.trButton input {
+    margin-right: 5px;
+}
+li.tabButton {
+    border: 1px solid #dadada;
+    padding: 0.6rem 0.8rem;
+    border-radius: 4px;
+    margin: 0rem 0.5rem;
+}
+.tabGroup li:nth-child(3) {
+    border: 1px solid #1672EC;
+    color: #1672EC;
+}

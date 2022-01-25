@@ -47,3 +47,9 @@ app.get('/feed_management', function (req, res){
 app.get('/clinical_observation', function (req, res){
     res.render('clinical_observation.html')
 });
+app.get('/testresults', function (req, res){
+    res.render('testresults.html')
+});
+app.get('/EPIS_management', function (req, res){
+    res.render('EPIS_management.html')
+});
