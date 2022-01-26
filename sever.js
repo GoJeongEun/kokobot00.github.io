@@ -53,3 +53,9 @@ app.get('/testresults', function (req, res){
 app.get('/EPIS_management', function (req, res){
     res.render('EPIS_management.html')
 });
+app.get('/spawn_analysis', function (req, res){
+    res.render('spawn_analysis.html')
+});
+app.get('/hatch_management', function (req, res){
+    res.render('hatch_management.html')
+});

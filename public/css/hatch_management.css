@@ -1,0 +1,228 @@
+/* 서브 헤더 아이콘 */
+.middle_title::before {
+    content: '';
+    width: 27px;
+    height: 27px;
+    background-image: url(/icon/chick.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+li.middle_title p {
+    margin-left: 35px;
+    margin-top: 2px;
+}
+/* 부화실 */
+.keeparea {
+    display: flex;
+}
+.hatchConBox {
+    margin-bottom: 20px;
+}
+.hatchConBox:not(:last-child){
+    margin-right: 1%;
+}
+.hatchTagBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+li.hatchTag {
+    padding: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+    background: #EBF2FF;
+    border-radius: 4px;
+    font-weight: bold;
+}
+li.hatchTag p {
+    margin: 0;
+    color: #606266;
+}
+.hatcharea {
+    margin-top: 20px;
+}
+.hatcharea p {
+    margin: 0;
+    font-size: 2rem;
+    padding: 0 0.5rem;
+    color: #606266;
+    font-weight: bold;
+}
+.hatcharea p:first-child {
+    color: black;
+}
+ul.infoBox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+li.infoItem {
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.5rem 0rem;
+    align-items: center;
+}
+li.infoItem img {
+    margin-right: 11px;
+}
+.dateCenter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.dateCenter span {
+    font-weight: bold;
+    color: #606266;
+}
+.dateCenter .warring {
+    color: #1672EC;
+}
+li.infoItem .fisrtText {
+    width: 80px;
+}
+li.infoItem .warring {
+    font-weight: bold;
+    color: #DA100B !important;
+    padding: 0;
+}
+li.infoItem span:last-child {
+    color: #606266;
+    font-weight: bold;
+}
+/* 부화실 */
+.hatchIconBox {
+    display: flex;
+    margin-top: 20px;
+}
+.Iconarea {
+    margin-right: 10px;
+}
+.Iconarea img {
+    width: 50px;
+}
+.textarea li span {
+    font-weight: bold;
+}
+.textarea li.two .color {
+    color: #1672EC;
+}
+.hatchConBox.warringR {
+    background:rgba(255, 225, 225, 1);
+}
+.hatchConBox.warringB {
+    background:rgba(235, 242, 255, 1);
+}
+.hatchConBox.warringB .hatchTag,.hatchConBox.warringR .hatchTag {
+    background: white;
+}
+.infoItem span.cold {
+    color: #1672EC !important;
+}
+.infoItem span.hot {
+    color: #DA100B !important;
+}
+/* 테이블 */
+.hatchConBox.col-lg-12.Boxcustom.table div {
+    float: left;
+}
+.hatchLeft {
+    width: 14%;
+}
+.tableBox {
+    width: 86%;
+}
+.leftTitle {
+    border-bottom: 1px solid #dadada;
+    width: 100%;
+    margin-top: 1.1rem;
+}
+.leftTitle h4 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.leftarea li {
+    margin: 0.5rem;
+    box-shadow: 0px 0.63px 1.26px rgb(97 97 97 / 20%), 0px 1.26px 2.52px rgb(97 97 97 / 20%);
+    padding: 1rem;
+    border-radius: 4px;
+}
+.leftarea li:first-child:after {
+    background: #1672EC;
+}
+.leftarea li:after{
+    width: 30px;
+    height: 30px;
+    content: '';
+    position:absolute;
+    background: #E9E9E9;
+    margin-left: 170px;
+    border-radius: 15px;
+    margin-top: -4px;
+}
+li.leftItem p {
+    margin: 0;
+}
+li.leftItem:first-child {
+    margin-top: 2rem;
+}
+li.leftItem:last-child{
+    margin-bottom: 2rem;
+}
+li.leftItem p.num {
+    z-index: 2;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.leftarea li.active{
+    background: #EBF2FF;
+}
+.leftarea {
+    width: 95%;
+}
+li.leftItem,li.leftItem.active  {
+    display: flex !important;
+    justify-content: space-between;
+}
+.farmTable th, .farmTable td {
+    font-weight: 500;
+    
+}
+.farmTable {
+    margin-top: 4px;
+    
+}
+
+.tabTitle h4 {
+    font-weight: bold;
+}
+/* 테이블탭 */
+.tabContainer {
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.datesearch {
+    height: 38px;
+    padding: 0 1.5rem;
+    background: #1672EC;
+    border: 1px solid #e4e7ed;
+    color: white;
+    border-radius: 4px;
+}
+li.dateBox input {
+    vertical-align: bottom;
+    line-height: 31px;
+}
+li.dateBox input:first-child::before {
+    content: '-';
+    position: absolute;
+    margin-left: 159px;
+}
+li.dateBox input:first-child {
+    margin-right: 8px;
+}

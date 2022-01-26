@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Bootstrap Styles-->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <!-- Custom Styles-->
+    <link href="css/custom-styles.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/hatch_management.css" rel="stylesheet" />
+    <link href="css/topEventcard.css" rel="stylesheet" />
+    <!-- calender css, js -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="css/calender.css" rel="stylesheet" />
+    <link href="css/simple-calendar.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- 슬라이더 js -->
+    <script type="text/javascript" src="js/slider.js"></script>
+    <!-- Slick Plugin -->
+    <link rel="stylesheet" type="text/css" href="plugin/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="plugin/slick/slick-theme.css" />
+    <script type="text/javascript" src="plugin/slick/slick.js"></script>
+    <!--CHART-->
+    <!-- <script src="plugin/chart/Chart.js"></script> -->
+    <!-- <script src="plugin/chart/Chart.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
+        integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>꼬꼬 대시보드</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <article id="wrapper-top">
+            <nav class="navbar navbar-default top-navbar" role="navigation">
+                <%- include ('top-navbar.html') %>
+            </nav>
+        </article>
+        <article id="middle header">
+            <div class="middlenav">
+                <ul class="middle inner">
+                    <li class="middle_title">
+                        <p>부화관리</p>
+                    </li>
+                    <li class="middle_caption">
+                        <select id="farm">
+                            <option value="한밭농장">한밭농장</option>
+                            <option value="한밭농장">전체농장</option>
+                            <option value="아리농장">아리농장</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <div class="mainCon">
+            <div class="mainConinner row">
+                <div class="keeparea">
+                    <div class="hatchConBox col-lg-2 Boxcustom">
+                        <div class="hatchBox">
+                            <div class="hatchTagBox">
+                                <li class="hatchTag">
+                                    <p>1보관실</p>
+                                </li>
+                                <li>
+                                    <a href="#환경설정">
+                                        <img src="icon/GearIcon_G.png" alt="환경설정">
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="hatcharea">
+                                <p>종란 보관일령</p>
+                                <p>1-3일령</p>
+                            </div>
+                            <div class="hatchUInfo">
+                                <ul class="infoBox">
+                                    <li class="infoItem">
+                                        <img src="/icon/egg.png" alt="정상란">
+                                        <span class="fisrtText">총 입란수</span>
+                                        <span class="">2,150,000</span>
+                                    </li>
+                                    <li class="infoItem">
+                                        <img src="/icon/abnormal_egg.png" alt="정상란">
+                                        <span class="fisrtText">불합격란</span>
+                                        <span class="warring">100</span>
+                                    </li>
+                                    <li class="infoItem">
+                                        <img src="/icon/temperature.png" alt="정상란">
+                                        <span class="fisrtText">온/습도</span>
+                                        <span class="">23℃ / 75%</span>
+                                    </li>
+                                </ul>
+                                <div class="dateCenter">
+                                    <span>부화예정일</span>
+                                    <span class="warring">21.12.05</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hatchConBox col-lg-2 Boxcustom">
+                        <div class="hatchBox">
+                            <div class="hatchTagBox">
+                                <li class="hatchTag">
+                                    <p>2보관실</p>
+                                </li>
+                                <li>
+                                    <a href="#환경설정">
+                                        <img src="icon/GearIcon_G.png" alt="환경설정">
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="hatcharea">
+                                <p>종란 보관일령</p>
+                                <p>4-7일령</p>
+                            </div>
+                            <div class="hatchUInfo">
+                                <ul class="infoBox">
+                                    <li class="infoItem">
+                                        <img src="/icon/egg.png" alt="정상란">
+                                        <span class="fisrtText">총 입란수</span>
+                                        <span class="">2,150,000</span>
+                                    </li>
+                                    <li class="infoItem">
+                                        <img src="/icon/abnormal_egg.png" alt="정상란">
+                                        <span class="fisrtText">불합격란</span>
+                                        <span class="warring">50,000</span>
+                                    </li>
+                                    <li class="infoItem">
+                                        <img src="/icon/temperature.png" alt="정상란">
+                                        <span class="fisrtText">온/습도</span>
+                                        <span class="">23℃ / 75%</span>
+                                    </li>
+                                </ul>
+                                <div class="dateCenter">
+                                    <span>입란일</span>
+                                    <span class="warring">21.12.05</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hatchConBox col-lg-2 Boxcustom">
+                        <div class="hatchBox">
+                            <div class="hatchTagBox">
+                                <li class="hatchTag">
+                                    <p>3보관실</p>
+                                </li>
+                                <li>
+                                    <a href="#환경설정">
+                                        <img src="icon/GearIcon_G.png" alt="환경설정">
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="hatcharea">
+                                <p>종란 보관일령</p>
+                                <p>>7일령</p>
+                            </div>
+                            <div class="hatchUInfo">
+                                <ul class="infoBox">
+                                    <li class="infoItem">
+                                        <img src="/icon/egg.png" alt="정상란">
+                                        <span class="fisrtText">총 입란수</span>
+                                        <span class="">2,150,000</span>
+                                    </li>
+                                    <li class="infoItem">
+                                        <img src="/icon/abnormal_egg.png" alt="정상란">
+                                        <span class="fisrtText">불합격란</span>
+                                        <span class="warring">2,150,000</span>
+                                    </li>
+                                    <li class="infoItem">
+                                        <img src="/icon/temperature.png" alt="정상란">
+                                        <span class="fisrtText">온/습도</span>
+                                        <span class="">23℃ / 75%</span>
+                                    </li>
+                                </ul>
+                                <div class="dateCenter">
+                                    <span>입란일</span>
+                                    <span class="warring">21.12.15</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hatchConBox col-lg-2 Boxcustom">
+                        <div class="hatchBox">
+                            <div class="hatchTagBox">
+                                <li class="hatchTag">
+                                    <p>4보관실</p>
+                                </li>
+                                <li>
+                                    <a href="#환경설정">
+                                        <img src="icon/GearIcon_G.png" alt="환경설정">
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="hatcharea">
+                                <p>종란 보관일령</p>
+                                <p>>13일령</p>
+                            </div>
+                            <div class="hatchUInfo">
+                                <ul class="infoBox">
+                                    <li class="infoItem">
+                                        <img src="/icon/egg.png" alt="정상란">
+                                        <span class="fisrtText">총 입란수</span>
+                                        <span class="">2,150,000</span>
+                                    </li>
+                                    <li class="infoItem">
+                                        <img src="/icon/abnormal_egg.png" alt="정상란">
+                                        <span class="fisrtText">불합격란</span>
+                                        <span class="warring">150,000</span>
+                                    </li>
+                                    <li class="infoItem">
+                                        <img src="/icon/temperature.png" alt="정상란">
+                                        <span class="fisrtText">온/습도</span>
+                                        <span class="">23℃ / 75%</span>
+                                    </li>
+                                </ul>
+                                <div class="dateCenter">
+                                    <span>입란일</span>
+                                    <span class="warring">21.12.17</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="hatch">
+                    <div class="hatchConBox col-lg-2 Boxcustom">
+                        <div class="hatchBox">
+                            <div class="hatchTagBox">
+                                <li class="hatchTag">
+                                    <p>1부화실</p>
+                                </li>
+                                <li>
+                                    <a href="#환경설정">
+                                        <img src="icon/GearIcon_G.png" alt="환경설정">
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="hatchIconBox">
+                                <div class="Iconarea">
+                                    <img src="img/hatchImg.png" alt="부화기이미지">
+                                </div>
+                                <div class="textarea">
+                                    <li class="one">
+                                        <span>입란일</span>
+                                        <span>21.12.05</span>
+                                    </li>
+                                    <li class="two">
+                                        <span>경과일</span>
+                                        <span class="color">10일째</span>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="hatcharea">
+                                <p>가동중인 부화기 대수</p>
+                                <p>50/120</p>
+                            </div>
+                            <div class="hatchUInfo">
+                                <ul class="infoBox">
+                                    <li class="infoItem">
+                                        <img src="/icon/egg.png" alt="정상란">
+                                        <span class="fisrtText">총 입란수</span>
+                                        <span class="">2,150,000</span>
+                                    </li>
+                                    <li class="infoItem">
+                                        <img src="/icon/abnormal_egg.png" alt="정상란">
+                                        <span class="fisrtText">불합격란</span>
+                                        <span class="warring">150,000</span>
+                                    </li>
+                                    <li class="infoItem">
+                                        <img src="/icon/temperature.png" alt="정상란">
+                                        <span class="fisrtText">온/습도</span>
+                                        <span class="">23℃ / 75%</span>
+                                    </li>
+                                </ul>
+                                <div class="dateCenter">
+                                    <span>입란일</span>
+                                    <span class="warring">21.12.17</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="hatchConBox col-lg-2 Boxcustom warringR" >
+                            <div class="hatchBox">
+                                <div class="hatchTagBox">
+                                    <li class="hatchTag">
+                                        <p>2부화실</p>
+                                    </li>
+                                    <li>
+                                        <a href="#환경설정">
+                                            <img src="icon/GearIcon_G.png" alt="환경설정">
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="hatchIconBox">
+                                    <div class="Iconarea">
+                                        <img src="img/hatchImg.png" alt="부화기이미지">
+                                    </div>
+                                    <div class="textarea">
+                                        <li class="one">
+                                            <span>입란일</span>
+                                            <span>21.12.05</span>
+                                        </li>
+                                        <li class="two">
+                                            <span>경과일</span>
+                                            <span class="color">10일째</span>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="hatcharea">
+                                    <p>가동중인 부화기 대수</p>
+                                    <p>50/120</p>
+                                </div>
+                                <div class="hatchUInfo">
+                                    <ul class="infoBox">
+                                        <li class="infoItem">
+                                            <img src="/icon/egg.png" alt="정상란">
+                                            <span class="fisrtText">총 입란수</span>
+                                            <span class="">2,150,000</span>
+                                        </li>
+                                        <li class="infoItem">
+                                            <img src="/icon/abnormal_egg.png" alt="정상란">
+                                            <span class="fisrtText">불합격란</span>
+                                            <span class="warring">150,000</span>
+                                        </li>
+                                        <li class="infoItem">
+                                            <img src="/icon/temperature.png" alt="정상란">
+                                            <span class="fisrtText">온/습도</span>
+                                            <span class="hot">23℃ / 75%</span>
+                                        </li>
+                                    </ul>
+                                    <div class="dateCenter">
+                                        <span>입란일</span>
+                                        <span class="warring">21.12.17</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hatchConBox col-lg-2 Boxcustom">
+                            <div class="hatchBox">
+                                <div class="hatchTagBox">
+                                    <li class="hatchTag">
+                                        <p>3부화실</p>
+                                    </li>
+                                    <li>
+                                        <a href="#환경설정">
+                                            <img src="icon/GearIcon_G.png" alt="환경설정">
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="hatchIconBox">
+                                    <div class="Iconarea">
+                                        <img src="img/hatchImg.png" alt="부화기이미지">
+                                    </div>
+                                    <div class="textarea">
+                                        <li class="one">
+                                            <span>입란일</span>
+                                            <span>21.12.05</span>
+                                        </li>
+                                        <li class="two">
+                                            <span>경과일</span>
+                                            <span class="color">10일째</span>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="hatcharea">
+                                    <p>가동중인 부화기 대수</p>
+                                    <p>50/120</p>
+                                </div>
+                                <div class="hatchUInfo">
+                                    <ul class="infoBox">
+                                        <li class="infoItem">
+                                            <img src="/icon/egg.png" alt="정상란">
+                                            <span class="fisrtText">총 입란수</span>
+                                            <span class="">2,150,000</span>
+                                        </li>
+                                        <li class="infoItem">
+                                            <img src="/icon/abnormal_egg.png" alt="정상란">
+                                            <span class="fisrtText">불합격란</span>
+                                            <span class="warring">150,000</span>
+                                        </li>
+                                        <li class="infoItem">
+                                            <img src="/icon/temperature.png" alt="정상란">
+                                            <span class="fisrtText">온/습도</span>
+                                            <span class="">23℃ / 75%</span>
+                                        </li>
+                                    </ul>
+                                    <div class="dateCenter">
+                                        <span>입란일</span>
+                                        <span class="warring">21.12.17</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hatchConBox col-lg-2 Boxcustom warringB">
+                            <div class="hatchBox">
+                                <div class="hatchTagBox">
+                                    <li class="hatchTag">
+                                        <p>4부화실</p>
+                                    </li>
+                                    <li>
+                                        <a href="#환경설정">
+                                            <img src="icon/GearIcon_G.png" alt="환경설정">
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="hatchIconBox">
+                                    <div class="Iconarea">
+                                        <img src="img/hatchImg.png" alt="부화기이미지">
+                                    </div>
+                                    <div class="textarea">
+                                        <li class="one">
+                                            <span>입란일</span>
+                                            <span>21.12.05</span>
+                                        </li>
+                                        <li class="two">
+                                            <span>경과일</span>
+                                            <span class="color">10일째</span>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="hatcharea">
+                                    <p>가동중인 부화기 대수</p>
+                                    <p>50/120</p>
+                                </div>
+                                <div class="hatchUInfo">
+                                    <ul class="infoBox">
+                                        <li class="infoItem">
+                                            <img src="/icon/egg.png" alt="정상란">
+                                            <span class="fisrtText">총 입란수</span>
+                                            <span class="">2,150,000</span>
+                                        </li>
+                                        <li class="infoItem">
+                                            <img src="/icon/abnormal_egg.png" alt="정상란">
+                                            <span class="fisrtText">불합격란</span>
+                                            <span class="warring">150,000</span>
+                                        </li>
+                                        <li class="infoItem">
+                                            <img src="/icon/temperature.png" alt="정상란">
+                                            <span class="fisrtText">온/습도</span>
+                                            <span class="cold">23℃ / 75%</span>
+                                        </li>
+                                    </ul>
+                                    <div class="dateCenter">
+                                        <span>입란일</span>
+                                        <span class="warring">21.12.17</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hatchConBox col-lg-2 Boxcustom">
+                            <div class="hatchBox">
+                                <div class="hatchTagBox">
+                                    <li class="hatchTag">
+                                        <p>1부화실</p>
+                                    </li>
+                                    <li>
+                                        <a href="#환경설정">
+                                            <img src="icon/GearIcon_G.png" alt="환경설정">
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="hatchIconBox">
+                                    <div class="Iconarea">
+                                        <img src="img/hatchImg.png" alt="부화기이미지">
+                                    </div>
+                                    <div class="textarea">
+                                        <li class="one">
+                                            <span>입란일</span>
+                                            <span>21.12.05</span>
+                                        </li>
+                                        <li class="two">
+                                            <span>경과일</span>
+                                            <span class="color">10일째</span>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="hatcharea">
+                                    <p>가동중인 부화기 대수</p>
+                                    <p>50/120</p>
+                                </div>
+                                <div class="hatchUInfo">
+                                    <ul class="infoBox">
+                                        <li class="infoItem">
+                                            <img src="/icon/egg.png" alt="정상란">
+                                            <span class="fisrtText">총 입란수</span>
+                                            <span class="">2,150,000</span>
+                                        </li>
+                                        <li class="infoItem">
+                                            <img src="/icon/abnormal_egg.png" alt="정상란">
+                                            <span class="fisrtText">불합격란</span>
+                                            <span class="warring">150,000</span>
+                                        </li>
+                                        <li class="infoItem">
+                                            <img src="/icon/temperature.png" alt="정상란">
+                                            <span class="fisrtText">온/습도</span>
+                                            <span class="">23℃ / 75%</span>
+                                        </li>
+                                    </ul>
+                                    <div class="dateCenter">
+                                        <span>입란일</span>
+                                        <span class="warring">21.12.17</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="hatchConBox col-lg-12 Boxcustom table">
+                    <div class="hatchLeft">
+                        <div class="leftTitle">
+                            <h4>부화관리</h4>
+                        </div>
+                        <div class="leftarea">
+                            <li class="leftItem active">
+                                <p>입란전관리</p>
+                                <p class="num">10</p>
+                            </li>
+                            <li class="leftItem">
+                                <p>발육기간관리</p>
+                                <p class="num">10</p>
+                            </li>
+                            <li class="leftItem">
+                                <p>발생기간관리</p>
+                                <p class="num">10</p>
+                            </li>
+                            <li class="leftItem">
+                                <p>발생 후 관리(감별)</p>
+                                <p class="num">01</p>
+                            </li>
+                            <li class="leftItem">
+                                <p>발생 후 관리(감별 후)</p>
+                                <p class="num">15</p>
+                            </li>
+                            <li class="leftItem">
+                                <p>발생 후 처리(숫 병아리)</p>
+                                <p class="num">20</p>
+                            </li>
+
+                        </div>
+                    </div>
+                    <div class="tableBox">
+                        <ul class="tabContainer">
+                            <div class="tabTitle">
+                                <h4>입란전관리</h4>
+                            </div>
+                            <li class="dateBox">
+                                <input type="date" id="start" name="trip-start" value="2021-12-01"
+                                    min="2022-01-01" max="2022-12-31">
+                                <input type="date" id="start" name="trip-start" value="2021-12-31"
+                                    min="2022-01-01" max="2022-12-31">
+                                <button class="datesearch">검색</button>
+                            </li>
+                        </ul>
+                        <table class="farmTable">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th>입고일</th>
+                                    <th>품종</th>
+                                    <th>종란총수</th>
+                                    <th>정상란</th>
+                                    <th>비정상란</th>
+                                    <th>소독제/소독방법</th>
+                                    <th>종란보관기간</th>
+                                    <th>온/습도</th>
+                                    <th>예열여부</th>
+                                    <th>모니터링결과</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>21.11.05</td>
+                                    <td>하이라인브라운</td>
+                                    <td>1,225,000</td>
+                                    <td>1,125,000</td>
+                                    <td>125,000</td>
+                                    <td>포르말린/훈증소독</td>
+                                    <td>3일</td>
+                                    <td>23℃/75%</td>
+                                    <td>O</td>
+                                    <td>이상없음</td>
+                                    <td><a href="#수정">수정</a><a href="#이동">이동</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>21.11.05</td>
+                                    <td>하이라인브라운</td>
+                                    <td>1,225,000</td>
+                                    <td>1,125,000</td>
+                                    <td>125,000</td>
+                                    <td>포르말린/훈증소독</td>
+                                    <td>3일</td>
+                                    <td>23℃/75%</td>
+                                    <td>O</td>
+                                    <td>이상없음</td>
+                                    <td><a href="#수정">수정</a><a href="#이동">이동</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>21.11.05</td>
+                                    <td>하이라인브라운</td>
+                                    <td>1,225,000</td>
+                                    <td>1,125,000</td>
+                                    <td>125,000</td>
+                                    <td>포르말린/훈증소독</td>
+                                    <td>3일</td>
+                                    <td>23℃/75%</td>
+                                    <td>O</td>
+                                    <td>이상없음</td>
+                                    <td><a href="#수정">수정</a><a href="#이동">이동</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>21.11.05</td>
+                                    <td>하이라인브라운</td>
+                                    <td>1,225,000</td>
+                                    <td>1,125,000</td>
+                                    <td>125,000</td>
+                                    <td>포르말린/훈증소독</td>
+                                    <td>3일</td>
+                                    <td>23℃/75%</td>
+                                    <td>O</td>
+                                    <td>이상없음</td>
+                                    <td><a href="#수정">수정</a><a href="#이동">이동</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>21.11.05</td>
+                                    <td>하이라인브라운</td>
+                                    <td>1,225,000</td>
+                                    <td>1,125,000</td>
+                                    <td>125,000</td>
+                                    <td>포르말린/훈증소독</td>
+                                    <td>3일</td>
+                                    <td>23℃/75%</td>
+                                    <td>O</td>
+                                    <td>이상없음</td>
+                                    <td><a href="#수정">수정</a><a href="#이동">이동</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>21.11.05</td>
+                                    <td>하이라인브라운</td>
+                                    <td>1,225,000</td>
+                                    <td>1,125,000</td>
+                                    <td>125,000</td>
+                                    <td>포르말린/훈증소독</td>
+                                    <td>3일</td>
+                                    <td>23℃/75%</td>
+                                    <td>O</td>
+                                    <td>이상없음</td>
+                                    <td><a href="#수정">수정</a><a href="#이동">이동</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- Metis Menu Js -->
+    <script src="js/jquery.metisMenu.js"></script>
+    <!-- Custom Js -->
+    <script src="js/custom-scripts.js"></script>
+    <script src="js/mj_js.js"></script>
+    <!-- calendar -->
+    <script src="js/jquery.simple-calendar.js"></script>
+    <script src="js/calendertwo.js"></script>
+    <!-- kakao map -->
+    <script charset="UTF-8" class="daum_roughmap_loader_script"
+        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <script src="js/map.js"></script>
+    <!-- chart.js -->
+    <script type="text/javascript" src="js/chartbase.js"></script>
+    <script type="text/javascript" src="js/medicinechart.js"></script>
+</body>
+
+</html>

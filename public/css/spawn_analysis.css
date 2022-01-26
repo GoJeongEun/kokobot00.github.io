@@ -3,7 +3,7 @@
     content: '';
     width: 27px;
     height: 27px;
-    background-image: url(/icon/episIcon.png);
+    background-image: url(/icon/spawnIcon.png);
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
@@ -12,6 +12,20 @@ li.middle_title p {
     margin-left: 35px;
     margin-top: 2px;
 }
+.spawnConBox.col-lg-12.Boxcustom {
+    margin-bottom: 20px;
+}
+.farmTable th, .farmTable td {
+    border-right: 1px solid #dadada;
+}
+td:first-child, th:first-child {
+    border: none;
+    border-left: 1px solid #dadada;
+}
+.spawnConBox:not(:nth-child(odd)){
+    margin-bottom: 20px;
+}
+/* 탭 */
 .tabContainer {
     display: block;
 }
@@ -80,25 +94,52 @@ li.tabButton {
 .tabButton {
     cursor: pointer;
 }
-.episConBox {
-    margin-top: 20px;
-}
-.tabTitle {
-    margin-right: 5px;
-}
-.tabarea {
+/* 상단 선택버튼 */
+ul.customerBox{
     display: flex;
+    align-items: center;
+    margin: 10px 0;
     justify-content: space-between;
 }
-.tabButtonBox {
+ul.customerBox li {
+    padding: 0.5rem 1rem;
+    margin: 0rem 1rem;
+    box-shadow: 0px 0.63px 1.26px rgba(97, 97, 97, 0.2),0px 1.26px 2.52px rgba(97, 97, 97, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+ul.customerBox li:not(:nth-child(2)) {
+    background: #F0F9FF;
+}
+.profile {
     display: flex;
 }
-.episConBox:not(:nth-child(odd)){
-    margin-right: 1%;
+.profile img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
 }
-/* 미디어 */
-@media (min-width: 1200px){
-    .col-lg-6 {
-        width: 49.444444%;
-     }
+.profile h4 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.customerButton {
+    display: flex;
+}
+.customerButton button {
+    border: 1.5px solid #e4e7ed;
+    background: white;
+    color: #606266;
+    padding: 0.8rem;
+    border-radius: 4px;
+}
+.customerButton i {
+    color:#1672EC ;
+    margin-right: 5px;
+}
+.customerarea {
+    display: flex;
+}
+.customerCon{
+    margin-bottom: 20px;
 }
