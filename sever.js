@@ -59,3 +59,12 @@ app.get('/spawn_analysis', function (req, res){
 app.get('/hatch_management', function (req, res){
     res.render('hatch_management.html')
 });
+app.get('/environment_management', function (req, res){
+    res.render('environment_management.html')
+});
+app.get('/disease_management', function (req, res){
+    res.render('disease_management.html')
+});
+app.get('/management', function (req, res){
+    res.render('management.html')
+});

@@ -1,0 +1,65 @@
+/* 서브 헤더 아이콘 */
+.middle_title::before {
+    content: '';
+    width: 27px;
+    height: 27px;
+    background-image: url(/icon/diseaseIcon.png);
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+li.middle_title p {
+    margin-left: 35px;
+    margin-top: 2px;
+}
+.tabContainer {
+    justify-content: start !important; 
+}
+.tabContainer h4 {
+    font-weight: bold;
+}
+.between {
+    justify-content: space-between !important;
+}
+.farmTable td {
+    width: 100px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 0;
+    overflow: hidden;
+}
+.dsConBox:not(:nth-child(2n)){
+    margin-right: 1%;
+}
+.dsConBox.col-lg-12 {
+    margin-top: 20px;
+}
+/* 미디어태그 */
+@media (min-width: 1200px){
+    .col-lg-5 {
+        width: 40.666667%;
+     }
+}
+/* 오른쪽 방역지도 */
+.right {
+    max-height: 730px;
+}
+.right>.mainConBox {
+    height: 730px !important;
+    overflow-y: scroll;
+}
+.right>.mainConBox::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+.newTitle {
+    padding: 0 3rem;
+}
+.right>.mainConBox {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.newTitle h4 {
+    border-bottom: 1px solid #dadada;
+    padding: 1rem 0;
+    font-weight: bold;
+}
