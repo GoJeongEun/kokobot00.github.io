@@ -14,7 +14,7 @@
     <!-- Custom Styles-->
     <link href="css/custom-styles.css" rel="stylesheet" />
     <link href="css/common.css" rel="stylesheet" />
-    <link href="css/hatch_management.css" rel="stylesheet" />
+    <link href="css/environment_management.css" rel="stylesheet" />
     <link href="css/topEventcard.css" rel="stylesheet" />
     <!-- calender css, js -->
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -58,7 +58,7 @@
                             <option value="아리농장">아리농장</option>
                         </select>
                     </li>
-                </ul>
+                </ul> 
             </div>
         </article>
         <div class="mainCon">
@@ -85,12 +85,10 @@
                     </div>
                     <div class="tableBox">
                         <div class="tabContainer">
-                            <div class="tableTopCustom">
-                                <div class="tabTitle">
-                                    <h4>농장 환경</h4>
-                                </div>
+                            <div class="tabTitle">
+                                <h4>농장 환경 테이블</h4>
                             </div>
-                            <div class="tabGroup">
+                            <ul class="tabGroup">
                                 <li class="tabBox">
                                     <div class="tabItem active">
                                         <a href="#">전체</a>
@@ -113,7 +111,7 @@
                                     <input type="date" id="start" name="trip-start" value="2021-12-31" min="2022-01-01" max="2022-12-31">
                                     <button class="datesearch">검색</button>
                                 </li>
-                            </div>
+                            </ul>
                         </div>
                         <table class="farmTable">
                             <thead>
@@ -213,6 +211,124 @@
                             </tbody>
                         </table>
                     </div>
+                </div>
+                <div class="emConBox col-lg-6 Boxcustom">
+                    <ul class="tableBox">
+                        <div class="tabContainer">
+                            <div class="tabTitle">
+                                <h4>점등프로그램</h4>
+                            </div>
+                            <li class="tabBox">
+                                <div class="tabItem active">
+                                    <a href="#">전체</a>
+                                </div>
+                                <div class="tabItem">
+                                    <a href="#">1동</a>
+                                </div>
+                                <div class="tabItem">
+                                    <a href="#">2동</a>
+                                </div>
+                                <div class="tabItem">
+                                    <a href="#">3동</a>
+                                </div>
+                                <div class="tabItem">
+                                    <a href="#">4동</a>
+                                </div>
+                            </li>
+                        </div>
+                        <table class="farmTable">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th>품종</th>
+                                    <th>사육형태</th>
+                                    <th>부화일</th>
+                                    <th>기간</th>
+                                    <th>일출</th>
+                                    <th>일몰</th>
+                                    <th>점등</th>
+                                    <th>소등</th>
+                                    <th>밝기</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>하이라인브라운</td>
+                                    <td>뜬장/무창</td>
+                                    <td>21.11.15</td>
+                                    <td>25주</td>
+                                    <td>07:46</td>
+                                    <td>17:26</td>
+                                    <td>01:30</td>
+                                    <td>09:00</td>
+                                    <td>25lux</td>
+                                    <td><a href="#수정">수정</a><a href="#전송">전송</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>하이라인브라운</td>
+                                    <td>평사/유창</td>
+                                    <td>21.10.05</td>
+                                    <td>30주</td>
+                                    <td>07:46</td>
+                                    <td>17:22</td>
+                                    <td>01:00</td>
+                                    <td>09:00</td>
+                                    <td>30lux</td>
+                                    <td><a href="#수정">수정</a><a href="#전송">전송</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>이사브라운</td>
+                                    <td>방목형</td>
+                                    <td>21.11.23</td>
+                                    <td>26주</td>
+                                    <td>07:46</td>
+                                    <td>17:22</td>
+                                    <td>02:00</td>
+                                    <td>07:00</td>
+                                    <td>30lux</td>
+                                    <td><a href="#수정">수정</a><a href="#전송">전송</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>하이라인브라운</td>
+                                    <td>뜬장/무창</td>
+                                    <td>21.10.15</td>
+                                    <td>31주</td>
+                                    <td>07:46</td>
+                                    <td>17:22</td>
+                                    <td>03:00</td>
+                                    <td>08:00</td>
+                                    <td>30lux</td>
+                                    <td><a href="#수정">수정</a><a href="#전송">전송</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td>
+                                    <td>이사브라운</td>
+                                    <td>뜬장/무창</td>
+                                    <td>21.09.25</td>
+                                    <td>26주</td>
+                                    <td>07:46</td>
+                                    <td>17:22</td>
+                                    <td>02:00</td>
+                                    <td>07:00</td>
+                                    <td>30lux</td>
+                                    <td><a href="#수정">수정</a><a href="#전송">전송</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </ul>
+                </div>
+                <div class="emConBox col-lg-6 Boxcustom">
+                    <h1>점등프로그램 그래프</h1>
+                    <h2>보류</h2>
+                    <h2>보류</h2>
+                    <h2>보류</h2>
+                    <h2>보류</h2>
+                    <h2>보류</h2>
                 </div>
             </div>
         </div>
