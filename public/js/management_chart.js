@@ -12,7 +12,7 @@ const  managementChart01= new Chart(ChartA, {
             // ⑤dataset의 이름(String)
             label: '계란판매',
             // ⑥dataset값(Array)
-            data: [45000, 60000, 42000, 45000, 35000, 35000, 30000],
+            data: [45000, 60000, 42000, 45000, 35000, 35000, 30000,32000],
 
             // ⑦dataset의 배경색(rgba값을 String으로 표현)
             backgroundColor: 'rgba(127, 127, 213, 1)',
@@ -26,7 +26,7 @@ const  managementChart01= new Chart(ChartA, {
              // ⑤dataset의 이름(String)
              label: '닭판매',
              // ⑥dataset값(Array)
-             data: [60000, 55000, 50000, 45000, 52000, 51000, 50000],
+             data: [60000, 55000, 50000, 45000, 52000, 51000, 50000, 51500],
              // ⑦dataset의 배경색(rgba값을 String으로 표현)
              backgroundColor:['rgba(213, 127, 194, 1)'], 
              // ⑧dataset의 선 색(rgba값을 String으로 표현)
@@ -40,7 +40,7 @@ const  managementChart01= new Chart(ChartA, {
             // ⑤dataset의 이름(String)
             label: '기타',
             // ⑥dataset값(Array)
-            data: [35000, 38000, 40000, 42000, 41000, 38000, 38000],
+            data: [35000, 38000, 40000, 42000, 41000, 38000, 38000, 42000],
             // ⑦dataset의 배경색(rgba값을 String으로 표현)
             backgroundColor:['rgba(134, 173, 231, 1)'], 
             // ⑧dataset의 선 색(rgba값을 String으로 표현)
@@ -155,7 +155,7 @@ const  managementChart02= new Chart(ChartB, {
 });
 //수당 수익율 그래프 
 const ChartC = document.getElementById('managementLineChart03');
-const  managementChart02= new Chart(ChartC, {
+const  managementChart03= new Chart(ChartC, {
     type: 'line',
     data: {
         // ③x축에 들어갈 이름들(Array)
@@ -217,13 +217,13 @@ const  managementChart02= new Chart(ChartC, {
 });
 
 //수입 바 그래프 
-const ChartA = document.getElementById('managementChart01');
-const  managementChart01= new Chart(ChartA, {
+const ChartD = document.getElementById('managementChart04');
+const  managementChart04= new Chart(ChartD, {
     type: 'bar',
     data: {
         // ③x축에 들어갈 이름들(Array)
         labels: ['사료비', '약품비', '노임', '광열비', '수선비', '기타'],
-        // ④실제 차트에 표시할 데이터들(Array), dataset객체들을 담고 있다.
+        // ④실제 차트에 표시할 데이터들( Array), dataset객체들을 담고 있다.
         datasets: [{  
             // ⑤dataset의 이름(String)
             label: '비용',

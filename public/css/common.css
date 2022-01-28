@@ -275,6 +275,9 @@ span.warringE {
     display: flex;
     justify-content: end;
 }
+.tabTitle h4 {
+    font-weight: bold;
+}
 li.tabBox {
     display: flex;
     justify-content: space-around;

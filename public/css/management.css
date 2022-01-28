@@ -1,0 +1,58 @@
+/* 서브 헤더 아이콘 */
+.middle_title::before {
+    content: '';
+    width: 27px;
+    height: 27px;
+    background-image: url(/icon/managementIcon.png);
+    position: absolute;
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+li.middle_title p {
+    margin-left: 35px;
+}
+.datesearch {
+    height: 38px;
+    padding: 0 1.5rem;
+    background: #1672EC;
+    border: 1px solid #e4e7ed;
+    color: white;
+    border-radius: 4px;
+}
+li.dateBox input {
+    vertical-align: bottom;
+}
+li.dateBox input:first-child::before {
+    content: '-';
+    position: absolute;
+    margin-left: 165px;
+}
+li.dateBox input:first-child {
+    margin-right: 8px;
+}
+.mgConBox.col-lg-12 table tr td:first-child {
+    border-right: 1px solid #dadada;
+}
+.mgConBox.col-lg-7 {
+    height: 430px;
+    margin-right: 1%;
+}
+.chartBox {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.chartBox > .chartItem:not(:last-child) {
+    margin-right: 1%;
+}
+.tabContainer {
+    justify-content:space-between;
+}
+
+/* 미디어태그 */
+@media (min-width: 1200px){
+    .col-lg-7 { 
+        width: 57.3333333%;
+        
+    }
+}
