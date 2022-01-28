@@ -71,3 +71,6 @@ app.get('/management', function (req, res){
 app.get('/upbringing_analysis', function (req, res){
     res.render('upbringing_analysis.html')
 });
+app.get('/haccp_monitoring', function (req, res){
+    res.render('haccp_monitoring.html')
+});
