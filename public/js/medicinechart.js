@@ -52,7 +52,7 @@ const  medicineChart= new Chart(ChartA, {
             title: {
                 display: true,
                 position:'top',
-                text: "비정산란 재고 현황",
+                text: "약품 사용 그래프",
                 font: {
                   size: 15,
                   color:'black'

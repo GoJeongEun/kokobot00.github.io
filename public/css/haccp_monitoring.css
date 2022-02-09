@@ -11,3 +11,25 @@
 li.middle_title p {
     margin-left: 35px;
 }
+/* 상단 금일 반입예정  */
+.customerCon.col-lg-12.Boxcustom {
+    margin-bottom: 20px;
+}
+ul.customerBox {
+    margin: 0;
+    padding: 0.5rem 0rem;
+}
+.customerarea {
+    display: flex;
+    justify-content: space-around;
+}
+li.customeritem .profile h4 {
+    font-weight: bold;
+}
+/* 상단 콘텐츠 01. 도넛 & 테이블 */
+.haccpdoughnut {
+    display: flex;
+}
+.haccpTable table {
+    width: 50%;
+}

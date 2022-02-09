@@ -89,7 +89,7 @@ const  managementChart02= new Chart(ChartB, {
             // ⑤dataset의 이름(String)
             label: '사료',
             // ⑥dataset값(Array)
-            data: [4500000, 6000000, 4200000, 4500000, 3500000, 3500000, 3000000],
+            data: [4500000, 6000000, 4200000, 4500000, 3500000, 3500000, 3000000,3500000],
 
             // ⑦dataset의 배경색(rgba값을 String으로 표현)
             backgroundColor: 'rgba(127, 127, 213, 1)',
@@ -103,7 +103,7 @@ const  managementChart02= new Chart(ChartB, {
              // ⑤dataset의 이름(String)
              label: '약품',
              // ⑥dataset값(Array)
-             data: [600000, 550000, 500000, 450000, 520000, 510000, 500000],
+             data: [600000, 550000, 500000, 450000, 520000, 510000, 500000,520000],
              // ⑦dataset의 배경색(rgba값을 String으로 표현)
              backgroundColor:['rgba(213, 127, 194, 1)'], 
              // ⑧dataset의 선 색(rgba값을 String으로 표현)
@@ -117,7 +117,7 @@ const  managementChart02= new Chart(ChartB, {
             // ⑤dataset의 이름(String)
             label: '기타',
             // ⑥dataset값(Array)
-            data: [35000, 38000, 40000, 42000, 41000, 38000, 38000],
+            data: [35000, 38000, 40000, 42000, 41000, 38000, 38000,50000],
             // ⑦dataset의 배경색(rgba값을 String으로 표현)
             backgroundColor:['rgba(134, 173, 231, 1)'], 
             // ⑧dataset의 선 색(rgba값을 String으로 표현)
