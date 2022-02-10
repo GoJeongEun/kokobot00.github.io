@@ -27,9 +27,95 @@ li.customeritem .profile h4 {
     font-weight: bold;
 }
 /* 상단 콘텐츠 01. 도넛 & 테이블 */
+.haccpConBox {
+    margin-bottom: 20px;
+}
 .haccpdoughnut {
     display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.haccpdoughnut canvas {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.haccpCon01Area {
+    display: flex;
+}
+.haccpTable {
+    width: 80%;
+    margin-top: 35px;
 }
 .haccpTable table {
-    width: 50%;
+    width: 60%;
+}
+.haccpTable table td {
+    border-right: 1px solid #fff;
+}
+.haccpTable table:first-child {
+    width: 35%;
+}
+.haccpTable table thead {
+    background: #0A3977;
+    color: white;
+}
+.haccpTable table tbody tr {
+    background: white !important;
+    color: #333;
+}
+.haccpSection .middle_caption select {
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+}
+/* 프로그래스바 */
+.progressCon {
+    margin-left: 1%;
+    height: 400px;
+}
+.progress {
+    height: 23px;
+}
+.progressBox {
+    margin-top: 12px;
+}
+.progressCon h3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.progressConTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconProgress {
+    background: #c5dcfa;
+    border-radius: 19px;
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.iconProgress img{
+    width: 28px;
+    height: 28px;
+    margin: 3px;
+}
+.eggRating h3{
+    font-weight: bold;
+    text-align: left;
+}
+.eggRating {
+    margin-top: 8%;
+}
+.progress-bar {
+    background-color: #1672EC;
+}
+
+/* 미디어태그 */
+@media (min-width: 1200px){
+    .progressCon { 
+        width: 24%;
+    }
 }
