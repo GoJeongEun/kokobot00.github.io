@@ -137,6 +137,7 @@ li.infoItem p {
 .tabTitle h4 {
     font-weight: bold;
 }
+/* 미디어태그 */
 @media (min-width: 1200px){
     .col-lg-6 { 
         width: 49.444444%;

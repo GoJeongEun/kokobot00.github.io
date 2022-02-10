@@ -10,7 +10,7 @@ const haccpChart01 = new Chart(ChartA, {
             data: [90, 10],
             backgroundColor: [
 
-                'rgba(90, 22, 236, 0.5)',
+                'rgba(90, 22, 236, 1)',
                 'rgba(211, 211, 211, 0.2)'
 
             ],
@@ -22,6 +22,7 @@ const haccpChart01 = new Chart(ChartA, {
         }]
     },
     options: {
+        cutout: 60,
         scales: {
 
             y: {
@@ -39,11 +40,11 @@ const haccpChart01 = new Chart(ChartA, {
                 position: 'top',
                 text: "생산목표",
                 font: {
-                    size: 15,
+                    size: 18,
                     color: 'black'
                 }
-            }
-        }
+            },
+        },
     },
 
 });
@@ -58,7 +59,7 @@ const HHchart = new Chart(ChartB, {
             data: [80, 10],
             backgroundColor: [
 
-                'rgba(34, 49, 137, 0.5)',
+                'rgba(34, 49, 137, 1)',
                 'rgba(211, 211, 211, 0.2)'
 
             ],
@@ -70,6 +71,7 @@ const HHchart = new Chart(ChartB, {
         }]
     },
     options: {
+        cutout: 60,
         scales: {
 
             y: {
@@ -87,7 +89,7 @@ const HHchart = new Chart(ChartB, {
                 position: 'top',
                 text: "생산량",
                 font: {
-                    size: 15,
+                    size: 18,
                     color: 'black',
                     text: "80%",
                     position: 'center',
@@ -111,7 +113,7 @@ const haccplineChart = new Chart(ChartC, {
                 type: 'line',
                 yAxisID: 'B',
                 // ⑥dataset값(Array)
-                data: [7, 8, 9, 7, 8, 9, 7, 8],
+                data: [15, 10, 13, 14, 15, 10, 7, 8],
 
                 // ⑦dataset의 배경색(rgba값을 String으로 표현)
                 backgroundColor: 'rgba(197, 220, 250, 1)',
@@ -184,11 +186,13 @@ const haccplineChart = new Chart(ChartC, {
                 type:'linear',
                 beginAtZero: true,
                 position:'right',
+                showLines:false,
                 ticks: {
                     beginAtZero:true,
-                    suggestedMin: 0,
+                    showLines:false,
                     scaleStartValue : 0,
-                    suggestedMax: 100,
+                    suggestedMin: 0,
+                    suggestedMax: 1000,
                     callback:function(value, index, values) {
                         return value + '%';
                     }
@@ -205,11 +209,116 @@ const haccplineChart = new Chart(ChartC, {
                 position: 'top',
                 text: "생산현황 및 불량률",
                 font: {
-                    size: 15,
+                    size: 20,
                     color: 'black',
                     weight: 'bold',
                 }
             }
         }
     }
+});
+
+// // haccp 모니터링 gauge chart
+// const ChartD = document.getElementById('gaugeChart01');
+// const gaugeChart01 = new Chart(ChartD, {
+//     type: 'gauge',
+//     data: {
+//         labels: ['낮음','보통','높음'],
+//         datasets: [{
+//             value: '0.5',
+//             minValue:0,
+//             data: [1, 2, 3],
+//             backgroundColor: ['#FBE5C9','#C5F2C7','#FCD0CF'],
+//             borderColor: [
+//                 'rgba(90, 22, 236, 1)',
+//                 'rgba(211, 211, 211, 1)'
+//             ],
+//             borderWidth: 2
+//         }]
+//     },
+//     options: {
+//         responsive: true,
+//         scales: {
+
+//             y: {
+//                 beginAtZero: true,
+//                 display: false
+//             }
+//         },
+//         plugins: {
+//             legend: {
+//                 display: true,
+//                 position: 'bottom'
+//             },
+//             layout:{
+//                 padding: {
+//                     bottom:30
+//                 }
+//             },
+//             needle: {
+//                 // Needle circle radius as the percentage of the chart area width
+//                 radiusPercentage: 2,
+//                 // Needle width as the percentage of the chart area width
+//                 widthPercentage: 3.2,
+//                 // Needle length as the percentage of the interval between inner radius (0%) and outer radius (100%) of the arc
+//                 lengthPercentage: 80,
+//                 // The color of the needle
+//                 color: 'rgba(0, 0, 0, 1)'
+//               },
+//               valueLabel: {
+//                 display: false
+//               },
+//               plugins: {
+//                 datalabels: {
+//                   display: true,
+//                   formatter:  function (value, context) {
+//                     return context.chart.data.labels[context.dataIndex];
+//                   },
+//                   color: 'rgba(0, 0, 0, 1.0)',
+//                   //color: 'rgba(255, 255, 255, 1.0)',
+//                   backgroundColor: null,
+//                   font: {
+//                     size: 20,
+//                     weight: 'bold'
+//                   }
+//                 }
+//               }
+//         },
+//     },
+
+// });
+
+var ctx = document.getElementById("gaugeChart01").getContext("2d");
+
+var chart = new Chart(ctx, {
+  type: 'gauge',
+  data: {
+    datasets: [{
+      value: 0.5,
+      minValue: 0,
+      data: [1, 2, 3, 4],
+      backgroundColor: ['green', 'yellow', 'orange', 'red'],
+    }]
+  },
+  options: {
+    needle: {
+      radiusPercentage: 2,
+      widthPercentage: 3.2,
+      lengthPercentage: 80,
+      color: 'rgba(0, 0, 0, 1)'
+    },
+    valueLabel: {
+      display: true,
+      formatter: (value) => {
+        return '$' + Math.round(value);
+      },
+      color: 'rgba(255, 255, 255, 1)',
+      backgroundColor: 'rgba(0, 0, 0, 1)',
+      borderRadius: 5,
+      padding: {
+        top: 10,
+        bottom: 10
+      }
+    }
+  }
 });

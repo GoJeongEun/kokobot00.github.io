@@ -87,9 +87,19 @@
                     </ul>
                 </div>
                 <div class="haccpConBox col-lg-12 Boxcustom">
-                    <h3>도넛 그래프&테이블</h3>
                     <div class="haccpCon01Area">
-                        <div class="haccpdoughnut">
+                        <div class="haccpSection">
+                            <li class="middle_caption">
+                                <select id="farm">
+                                    <option value="동선택">동선택</option>
+                                    <option value="1동">1동</option>
+                                    <option value="2동">2동</option>
+                                    <option value="3동">3동</option>
+                                    <option value="4동">4동</option>
+                                </select>
+                            </li>
+                        </div>
+                        <div class="haccpdoughnut col-lg-5">
                             <canvas id="haccpChart01" style="max-height: 250px; max-width: 250px;"></canvas>
                             <canvas id="haccpChart02" style="max-height: 250px; max-width: 250px;"></canvas>
                         </div>
@@ -133,30 +143,82 @@
                         </div>
                     </div>
                 </div>
-                <div class="haccpConBox col-lg-9 Boxcustom">
-                    <h3>생산현황 및 불량률 막대라인믹스</h3>
-                    <canvas id="haccplineChart"></canvas>
+                <div class="haccpConBox col-lg-9 Boxcustom" style="height: 400px;">
+                    <canvas id="haccplineChart" style="max-height: 380px;"></canvas>
                 </div>
-                <div class="haccpConBox col-lg-3 Boxcustom">
-                    <h3>생산불량현황</h3>
-                    <h4>막대 오른쪽</h4>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
-                            aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="haccpConBox col-lg-3 Boxcustom progressCon">
+                    <div class="progressConTitle">
+                        <h3>생산불량현황</h3>
+                        <div class="iconProgress">
+                            <a href="#">
+                                <img src="icon/progressIcon.png" alt="불량현황아이콘">
+                            </a>
+                        </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="50"
-                            aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progressBox">
+                        <span>파란</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 13%" aria-valuenow="75"
-                            aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progressBox">
+                        <span>혈란</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progressBox">
+                        <span>기타</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 13%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="eggRating">
+                        <h3>등급 판정 결과 1+등급</h3>
+                    </div>
+                </div>
+                <div class="monitorCon">
+                    <div class="monitorTop col-lg-12 Boxcustom">
+                        <div class="monitorText">
+                            <h3>종합 모니터링</h3>
+                        </div>
+                        <div class="moniterColor">
+                            <li class="colorItem">
+                                <div class="circle Y"></div>
+                                <span>경고</span>
+                            </li>
+                            <li class="colorItem">
+                                <div class="circle G"></div>
+                                <span>정상</span>
+                            </li>
+                            <li class="colorItem">
+                                <div class="circle R"></div>
+                                <span>위험</span>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="monitorBox Boxcustom">
+                        <ul class="monitorArea">
+                            <li class="moniterItem col-lg-3 Boxcustom">
+                                <canvas id="gaugeChart01"></canvas>
+                            </li>
+                            <li class="moniterItem col-lg-3 Boxcustom">
+                                <canvas id="gaugeChart01"></canvas>
+                            </li>
+                            <li class="moniterItem col-lg-3 Boxcustom">
+                                <canvas id="gaugeChart01"></canvas>
+                            </li>
+                            <li class="moniterItem col-lg-3 Boxcustom">
+                                <canvas id="gaugeChart01"></canvas>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
     </div>
     <!-- Metis Menu Js -->
     <script src="js/jquery.metisMenu.js"></script>
