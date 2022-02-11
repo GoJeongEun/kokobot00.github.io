@@ -32,6 +32,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
         integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/chartjs-plugin-doughnutlabel.js"></script>
     <title>꼬꼬 대시보드</title>
 </head>
 
@@ -203,16 +204,16 @@
                     <div class="monitorBox Boxcustom">
                         <ul class="monitorArea">
                             <li class="moniterItem col-lg-3 Boxcustom">
-                                <canvas id="gaugeChart01"></canvas>
+                                <canvas id="gaugeChart01" style="max-height: 270px;"></canvas>
                             </li>
                             <li class="moniterItem col-lg-3 Boxcustom">
-                                <canvas id="gaugeChart01"></canvas>
+                                <canvas id="gaugeChart02" style="max-height: 270px;"></canvas>
                             </li>
                             <li class="moniterItem col-lg-3 Boxcustom">
-                                <canvas id="gaugeChart01"></canvas>
+                                <canvas id="gaugeChart03" style="max-height: 270px;"></canvas>
                             </li>
                             <li class="moniterItem col-lg-3 Boxcustom">
-                                <canvas id="gaugeChart01"></canvas>
+                                <canvas id="gaugeChart04" style="max-height: 270px;"></canvas>
                             </li>
                         </ul>
                     </div>
@@ -233,7 +234,6 @@
         src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
     <script src="js/map.js"></script>
     <!-- chart.js -->
-    <script src="js/chartjs-plugin-doughnutlabel.js"></script>
     <script type="text/javascript" src="js/chartbase.js"></script>
     <script type="text/javascript" src="js/haccpChart.js"></script>
 </body>

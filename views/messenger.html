@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Bootstrap Styles-->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <!-- Custom Styles-->
+    <link href="css/custom-styles.css" rel="stylesheet" />
+    <link href="css/messenger.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+    <!-- calender css, js -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    <!-- Google Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+    <script src="http://code.j query.com/jquery-3.5.1.min.js"></script>
+
+
+    <title>꼬꼬 대시보드</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <article id="wrapper-top">
+            <nav class="navbar navbar-default top-navbar" role="navigation">
+                <%- include ('top-navbar.html') %>
+            </nav>
+        </article>
+        <article id="middle header">
+            <div class="middlenav">
+                <ul class="middle inner">
+                    <li class="middle_title">
+                        <p>메세지</p>
+                    </li>
+                    <li class="middle_caption">
+                        <select id="farm">
+                            <option value="한밭농장">한밭농장</option>
+                            <option value="아리농장">아리농장</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <div class="mainCon">
+            <div class="leftMessageCon">
+                <ul class="leftMessageBox">
+                    <li class="messageArea">
+                        <div class="messageItem">
+                            <div class="messageleft">
+                                <input type="checkbox">
+                                <img src="img/profile01.png" alt="타조프로필">
+                            </div>
+                            <div class="messageright">
+                                <div class="one">
+                                    <p class="name">옥천농장</p>
+                                    <span class="day">2021.11.25 12:24</span>
+                                </div>
+                                <div class="two">
+                                    <p class="content">우리농장 조류독감 터짐</p>
+                                    <div class="num">1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messageItem">
+                            <div class="messageleft">
+                                <input type="checkbox">
+                                <img src="img/profile02.png" alt="타조프로필">
+                            </div>
+                            <div class="messageright">
+                                <div class="one">
+                                    <p class="name">춘식농장</p>
+                                    <span class="day">2021.11.25 12:24</span>
+                                </div>
+                                <div class="two">
+                                    <p class="info">(❁´◡`❁)💛</p>
+                                    <div class="num">1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messageItem">
+                            <div class="messageleft">
+                                <input type="checkbox">
+                                <img src="img/profile06.png" alt="타조프로필">
+                            </div>
+                            <div class="messageright">
+                                <div class="one">
+                                    <p class="name">소울</p>
+                                    <span class="day">2021.11.25 10:50</span>
+                                </div>
+                                <div class="two">
+                                    <p class="info">(●'◡'●)</p>
+                                    <div class="num">1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messageItem">
+                            <div class="messageleft">
+                                <input type="checkbox">
+                                <img src="img/profile03.png" alt="타조프로필">
+                            </div>
+                            <div class="messageright">
+                                <div class="one">
+                                    <p class="name">엘사농장</p>
+                                    <span class="day">2021.11.25 12:24</span>
+                                </div>
+                                <div class="two">
+                                    <p class="info">(❁´◡`❁)</p>
+                                    <div class="num">1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messageItem">
+                            <div class="messageleft">
+                                <input type="checkbox">
+                                <img src="img/profile04.png" alt="타조프로필">
+                            </div>
+                            <div class="messageright">
+                                <div class="one">
+                                    <p class="name">안나농장</p>
+                                    <span class="day">2021.11.25 12:24</span>
+                                </div>
+                                <div class="two">
+                                    <p class="info">💚</p>
+                                    <div class="num">1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messageItem">
+                            <div class="messageleft">
+                                <input type="checkbox">
+                                <img src="img/profile05.png" alt="타조프로필">
+                            </div>
+                            <div class="messageright">
+                                <div class="one">
+                                    <p class="name">낙타농장</p>
+                                    <span class="day">2021.11.25 12:24</span>
+                                </div>
+                                <div class="two">
+                                    <p class="info">낙타보러올래요?</p>
+                                    <div class="num">1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="datesearch">전체선택</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="mainConinner row">
+                <div class="searchBox">
+                    <div class="search">
+                        <input type="text" placeholder="연락처 또는 메세지로 검색">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Metis Menu Js -->
+    <script src="js/jquery.metisMenu.js"></script>
+    <!-- Custom Js -->
+    <script src="js/custom-scripts.js"></script>
+    <script src="js/mj_js.js"></script>
+    <!-- calendar -->
+    <script src="js/jquery.simple-calendar.js"></script>
+    <script src="js/calendertwo.js"></script>
+    <!-- kakao map -->
+    <script charset="UTF-8" class="daum_roughmap_loader_script"
+        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <script src="js/map.js"></script>
+</body>
+
+</html>

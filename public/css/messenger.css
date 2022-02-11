@@ -1,0 +1,83 @@
+.mainConinner {
+    width: 100% !important;
+}
+/* 메신저 왼쪽 사이드바 */
+.leftMessageCon {
+    width: 300px;
+    height: 100%;
+    background: #ffffff;
+    z-index: 1;
+    position: fixed;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+}
+.messageItem {
+    display: flex;
+    border-bottom: 1px solid #EBEFF2;
+    align-items: center;
+    padding: 0.5rem 0;
+    background: white;
+}
+.messageleft {
+    padding-left:0.5rem;
+}
+.messageleft img {
+    width: 40px;
+    height: 40px;
+    /* border:1px solid #109ce1; */
+    border-radius: 20px;
+}
+.messageArea .messageItem:first-child {
+    border-right: 3px solid #109ce1;
+}
+.messageArea .messageItem:first-child .messageleft img {
+    border:1px solid #109ce1; 
+
+}
+.messageArea .messageItem:first-child .messageright .one p {
+    color: #109ce1;
+}
+.messageright {
+    width: 78%;
+    padding: 0 0.5rem 0 1rem;
+}
+.messageright .one, .messageright .two  {
+    display: flex;
+    justify-content: space-between;
+}
+.messageright .one {
+    align-items: center;
+}
+.messageright .one p{
+    color: #333333;
+    margin: 0;
+    margin-top: 5px;
+}
+.messageright .one span{
+    color: #90A0B7;
+    font-size: 1rem;
+}
+.messageright .two p{
+    color: #192A3E;
+    font-size: 1.2rem;
+}
+.messageright .two div{
+    width: 17px;
+    height: 17px;
+    border-radius: 3px;
+    color: white;
+    background: #109ce1;
+    line-height: 16px;
+    padding-left: 4px;
+}
+.datesearch {
+    background: #1672EC;
+    color: white;
+    border: none;
+    padding:0.5rem;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    margin-top: 15px;
+}
+
+

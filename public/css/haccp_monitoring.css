@@ -112,10 +112,73 @@ li.customeritem .profile h4 {
 .progress-bar {
     background-color: #1672EC;
 }
+/* 모니터링 상단 */
+.monitorTop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.monitorTop div {
+    display: flex;
+    align-items: center;
+}
+.monitorText h3 {
+    margin:0px;
+    font-size: 20px;
+    color: white;
+}
+.monitorText {
+    background: #1672EC;
+    border-radius: 10px 0px 0px 10px;
+    padding: 1rem 1.2rem 1rem 2.5rem;
+}
+.monitorText::after {
+    border-bottom: 21px solid transparent;
+    border-top: 21px solid transparent;
+    border-left: 30px solid #1672EC;
+    border-right: 21px solid transparent;
+    position: absolute;
+    margin-left: 8%;
+    content: '';
+}
+.moniterColor {
+    margin-right: 15px;
+}
+.moniterColor .colorItem div{
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: #C5F2C7;
+    margin-right: 6px;
+}
+.moniterColor .colorItem span {
+    font-weight: bold;
+    vertical-align: middle;
+}
+.moniterColor li:first-child div{ 
+    background-color: #FBE5C9;
+}
+.moniterColor li:last-child  div {
+    background-color: #FCD0CF;
+}
+.colorItem div {
+    float: left;
+}
+.colorItem {
+    margin-right: 12px;
+}
+.moniterItem.col-lg-3:not(:last-child){
+    margin-right: 1%;
+}
 
 /* 미디어태그 */
 @media (min-width: 1200px){
     .progressCon { 
         width: 24%;
     }
+    .moniterItem.col-lg-3 {
+        width: 24.222222%;
+    }
+ 
 }

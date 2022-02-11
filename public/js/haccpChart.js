@@ -218,107 +218,185 @@ const haccplineChart = new Chart(ChartC, {
     }
 });
 
-// // haccp 모니터링 gauge chart
-// const ChartD = document.getElementById('gaugeChart01');
-// const gaugeChart01 = new Chart(ChartD, {
-//     type: 'gauge',
-//     data: {
-//         labels: ['낮음','보통','높음'],
-//         datasets: [{
-//             value: '0.5',
-//             minValue:0,
-//             data: [1, 2, 3],
-//             backgroundColor: ['#FBE5C9','#C5F2C7','#FCD0CF'],
-//             borderColor: [
-//                 'rgba(90, 22, 236, 1)',
-//                 'rgba(211, 211, 211, 1)'
-//             ],
-//             borderWidth: 2
-//         }]
-//     },
-//     options: {
-//         responsive: true,
-//         scales: {
 
-//             y: {
-//                 beginAtZero: true,
-//                 display: false
-//             }
-//         },
-//         plugins: {
-//             legend: {
-//                 display: true,
-//                 position: 'bottom'
-//             },
-//             layout:{
-//                 padding: {
-//                     bottom:30
-//                 }
-//             },
-//             needle: {
-//                 // Needle circle radius as the percentage of the chart area width
-//                 radiusPercentage: 2,
-//                 // Needle width as the percentage of the chart area width
-//                 widthPercentage: 3.2,
-//                 // Needle length as the percentage of the interval between inner radius (0%) and outer radius (100%) of the arc
-//                 lengthPercentage: 80,
-//                 // The color of the needle
-//                 color: 'rgba(0, 0, 0, 1)'
-//               },
-//               valueLabel: {
-//                 display: false
-//               },
-//               plugins: {
-//                 datalabels: {
-//                   display: true,
-//                   formatter:  function (value, context) {
-//                     return context.chart.data.labels[context.dataIndex];
-//                   },
-//                   color: 'rgba(0, 0, 0, 1.0)',
-//                   //color: 'rgba(255, 255, 255, 1.0)',
-//                   backgroundColor: null,
-//                   font: {
-//                     size: 20,
-//                     weight: 'bold'
-//                   }
-//                 }
-//               }
-//         },
-//     },
 
-// });
+// haccp 생산 목표 도넛차트
 
-var ctx = document.getElementById("gaugeChart01").getContext("2d");
-
-var chart = new Chart(ctx, {
-  type: 'gauge',
-  data: {
-    datasets: [{
-      value: 0.5,
-      minValue: 0,
-      data: [1, 2, 3, 4],
-      backgroundColor: ['green', 'yellow', 'orange', 'red'],
-    }]
-  },
-  options: {
-    needle: {
-      radiusPercentage: 2,
-      widthPercentage: 3.2,
-      lengthPercentage: 80,
-      color: 'rgba(0, 0, 0, 1)'
+const chartD = document.getElementById('gaugeChart01');
+const gaugeChart01 = new Chart(chartD, {
+    type: 'doughnut',
+    data: {
+        labels: [''],
+        datasets: [{
+            label: '',
+            data: [40, 30, 30],
+            backgroundColor: [
+                '#FBE5C9', '#C5F2C7', '#FCD0CF'
+            ],
+            borderColor:['#fff'],
+            borderWidth: 1
+        }]
     },
-    valueLabel: {
-      display: true,
-      formatter: (value) => {
-        return '$' + Math.round(value);
-      },
-      color: 'rgba(255, 255, 255, 1)',
-      backgroundColor: 'rgba(0, 0, 0, 1)',
-      borderRadius: 5,
-      padding: {
-        top: 10,
-        bottom: 10
-      }
-    }
-  }
+    options: {
+        circumference: 180,
+         rotation: -90, 
+         cutout: 0,
+        scales: {
+            y: {
+                beginAtZero: true,
+                display: false
+            }
+        },
+        plugins: {
+            legend: {
+                display: false,
+                position: 'bottom'
+            },
+            title: {
+                display: true,
+                position: 'top',
+                text: "반입",
+                font: {
+                    size: 18,
+                    color: 'black'
+                }
+            },
+        },
+        
+    },
+});
+// haccp 생산 목표 도넛차트
+
+const chartE = document.getElementById('gaugeChart02');
+const gaugeChart02 = new Chart(chartE, {
+    type: 'doughnut',
+    data: {
+        labels: [''],
+        datasets: [{
+            label: '',
+            data: [40, 30, 30],
+            backgroundColor: [
+                '#FBE5C9', '#C5F2C7', '#FCD0CF'
+            ],
+            borderColor:['#fff'],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        circumference: 180,
+         rotation: -90, 
+         cutout: 0,
+        scales: {
+            y: {
+                beginAtZero: true,
+                display: false
+            }
+        },
+        plugins: {
+            legend: {
+                display: false,
+                position: 'bottom'
+            },
+            title: {
+                display: true,
+                position: 'top',
+                text: "사육",
+                font: {
+                    size: 18,
+                    color: 'black'
+                }
+            },
+        },
+        
+    },
+});
+// haccp 생산 목표 도넛차트
+
+const chartF = document.getElementById('gaugeChart03');
+const gaugeChart03 = new Chart(chartF, {
+    type: 'doughnut',
+    data: {
+        labels: [''],
+        datasets: [{
+            label: '',
+            data: [40, 30, 30],
+            backgroundColor: [
+                '#FBE5C9', '#C5F2C7', '#FCD0CF'
+            ],
+            borderColor:['#fff'],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        circumference: 180,
+         rotation: -90, 
+         cutout: 0,
+        scales: {
+            y: {
+                beginAtZero: true,
+                display: false
+            }
+        },
+        plugins: {
+            legend: {
+                display: false,
+                position: 'bottom'
+            },
+            title: {
+                display: true,
+                position: 'top',
+                text: "집란",
+                font: {
+                    size: 18,
+                    color: 'black'
+                }
+            },
+        },
+        
+    },
+});
+// haccp 생산 목표 도넛차트
+
+const chartG = document.getElementById('gaugeChart04');
+const gaugeChart04 = new Chart(chartG, {
+    type: 'doughnut',
+    data: {
+        labels: [''],
+        datasets: [{
+            label: '',
+            data: [40, 30, 30],
+            backgroundColor: [
+                '#FBE5C9', '#C5F2C7', '#FCD0CF'
+            ],
+            borderColor:['#fff'],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        circumference: 180,
+         rotation: -90, 
+         cutout: 0,
+        scales: {
+            y: {
+                beginAtZero: true,
+                display: false
+            }
+        },
+        plugins: {
+            legend: {
+                display: false,
+                position: 'bottom'
+            },
+            title: {
+                display: true,
+                position: 'top',
+                text: "출하",
+                font: {
+                    size: 18,
+                    color: 'black'
+                }
+            },
+        },
+        
+    },
 });
