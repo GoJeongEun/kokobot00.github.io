@@ -133,7 +133,7 @@ li.ArrowItem {
 .triG {
     border-bottom: 16px solid transparent;
     border-top: 16px solid transparent;
-    border-left: 16px solid #E4E7ED;
+    border-left: 22px solid #E4E7ED;
     border-right: 16px solid transparent;
     position: absolute;
     z-index: 1;
@@ -144,7 +144,7 @@ li.ArrowItem {
 .triB {
   border-bottom: 16px solid transparent;
   border-top: 16px solid transparent;
-  border-left: 16px solid #1672EC;
+  border-left: 22px solid #1672EC;
   border-right: 16px solid transparent;
   position: absolute;
   z-index: 1;
