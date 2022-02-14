@@ -23,7 +23,8 @@ article#middle\ header {
     z-index: 9;
     background: white;
     border-bottom: 1.5px solid #1672EC;
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
 }
 .middlenav {
     width: 95%;

@@ -77,3 +77,6 @@ app.get('/haccp_monitoring', function (req, res){
 app.get('/messenger', function (req, res){
     res.render('messenger.html')
 });
+app.get('/Environmental_management', function (req, res){
+    res.render('Environmental_management.html')
+});
