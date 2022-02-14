@@ -1,5 +1,6 @@
 .mainConinner {
-    width: 100% !important;
+    width: 68% !important;
+    margin-top: 1% !important;
 }
 /* 메신저 왼쪽 사이드바 */
 .leftMessageCon {
@@ -35,6 +36,7 @@
 }
 .messageArea .messageItem:first-child .messageright .one p {
     color: #109ce1;
+    font-weight: bold;
 }
 .messageright {
     width: 78%;
@@ -79,5 +81,135 @@
     right: 10px;
     margin-top: 15px;
 }
-
-
+/* 메세지 상단 검색 */
+.centerArea {
+    width: 75%;
+    margin: 0 auto;
+}
+.searchBox {
+    background: white;
+    padding: 1rem 3rem 1rem 4rem;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    /* border-bottom: 1px solid #dadada; */
+}
+.search {
+    display: flex;
+    justify-content: space-between;
+}
+.search::before {
+    content: '\f002';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 600;
+    color: #C2CFE0;
+    width: 20px;
+    height: 20px;
+    margin-left: -21px;
+}
+.search input {
+    border: none;
+    color: #90A0B7;
+    font-size: 1.4rem;
+    width: 80%;
+}
+.messageCon00 {
+    background-color: white;
+}
+.profileAtra {
+    display: flex;
+    align-items: center;
+}
+li.profileArea p {
+    margin:0;
+    margin-left: 7px;
+}
+.profileImg{
+    padding: 0.8rem;
+    border-bottom: 1px solid #dadada;
+}
+li.profileArea {
+    display: flex;
+    align-items: center;
+}
+li.profileArea img {
+    width: 30px;
+    height: 30px;
+    background: #eff3f9;
+    border-radius: 15px;
+    border: 1px solid #109ce1;
+}
+li.profileArea p::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background-color: #2ED47A;
+    border-radius: 3px;
+    margin-top: 8px;
+    margin-left: 7px;
+}
+.messageB {
+    width: 50%;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+}
+.nameTag {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.nameTag img {
+    width: 30px;
+    height: 30px;
+}
+.nameTag p {
+    margin: 0;
+    margin-left: 5px;
+}
+.profileName {
+    color: #192A3E;
+    font-size: 1.5rem;
+}
+.nameTag .time {
+    color: #90A0B7;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+.messageContent .textarea {
+    background: #109cf1;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 450px;
+}
+.messageA {
+    width: 50%;
+    margin-left: 470px;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+}
+.messageA .messageContent .textarea  {
+    background: white !important;
+    border: 1px solid #E4E9EE;
+}
+.messageInput {
+    padding: 1.5rem 3rem 1.5rem 2rem;
+    border-top: 1px solid #dadada;
+    display: flex;
+    justify-content: space-between;
+}
+.messageInput .TextInput {
+    width: 80%;
+}
+.messageInput input {
+    border: none;
+    width: 80%;
+    color: #192a3e;
+}
+.message-i i{
+    color: #90A0B7;
+}
+.message-i a {
+    margin-right: 5px;
+}
+.messageCon00 div:nth-child(4) {
+    padding:2rem 1.5rem 6rem 1.5rem;
+}
