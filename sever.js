@@ -59,8 +59,8 @@ app.get('/spawn_analysis', function (req, res){
 app.get('/hatch_management', function (req, res){
     res.render('hatch_management.html')
 });
-app.get('/environment_management', function (req, res){
-    res.render('environment_management.html')
+app.get('/Environmental_management', function (req, res){
+    res.render('Environmental_management.html')
 });
 app.get('/disease_management', function (req, res){
     res.render('disease_management.html')
@@ -77,6 +77,6 @@ app.get('/haccp_monitoring', function (req, res){
 app.get('/messenger', function (req, res){
     res.render('messenger.html')
 });
-app.get('/Environmental_management', function (req, res){
-    res.render('Environmental_management.html')
+app.get('/Environmental_analysis', function (req, res){
+    res.render('Environmental_analysis.html')
 });

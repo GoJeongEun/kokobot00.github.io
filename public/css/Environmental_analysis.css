@@ -1,0 +1,151 @@
+.middle_title::before {
+    content: '';
+    width: 27px;
+    height: 27px;
+    background-image: url(/icon/EnvironmentalIcon.png);
+    position: absolute;
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+li.middle_title p {
+    margin-left: 35px;
+}
+/* title */
+.title_em {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.title_em h4 {
+    font-weight: bold;
+}
+.title_em .more{
+    background: white;
+    border: 1px solid #E4E7ED;
+    color: #606266;
+    padding: 0rem 1rem;
+    border-radius: 4px;
+}
+.title_em i {
+    color: #1672EC;
+    margin-left: 5px;
+}
+/* 전개도  */
+.floor {
+    margin-bottom: 20px;
+}
+.floorArea {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.floorArea img {
+    margin:0 auto;
+    width: 100%;
+}
+/* 입면도 */
+.elevationCon {
+    margin-bottom: 20px;
+}
+.elecationArea {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.elecationArea img {
+    margin: 0 auto;
+    width: 100%;
+}
+/* 센서 */
+.SensorManagement {
+    margin-bottom: 20px;
+}
+.SensorManagement .sensorBox {
+    float: left;
+    margin-left: 100px;
+}
+.sensorArea {
+    display: flex;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    background-size: auto;
+    position: absolute;
+    margin-top: -16%;
+    width: 700px;
+    margin-left: 22px
+}.sensorBox {
+    margin-bottom: 40px;
+}
+.sensoreHouse h5 {
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 250px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.sensorItem {
+    display: flex;
+    height: 50px;
+    background: white;
+    box-shadow: 0px 2px 12px rgb(0 0 0 / 10%);
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 4px;
+    justify-content: center;
+    width: 188px;
+    height: 60px;
+    padding: 10px;
+}
+.sensorIcon {
+    width: 40px;
+    height: 40px;
+    background: #EBF2FF;
+    border-radius: 4px;
+}
+.sensorIcon img {
+    width: 30px;
+    height: auto;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+.sensorText p {
+    margin: 0;
+}
+.sensorText {
+    margin-left: 5px;
+}
+.sensorArea .sensorItem:first-child .sensorIcon img {
+    width: 20px;
+    height: auto;
+    margin-left: 11px;
+    margin-top: 2px
+}
+.sensorArea .sensorItem:last-child {
+    width: 200px;
+}
+.sensorText .blue {
+    color: #1672EC;
+    font-weight: bold;
+}
+.sensorText .red {
+    color: #DA100B;
+    font-weight: bold;
+} 
+.sensorText .yellow {
+    color: #ED9526;
+    font-weight: bold;
+}
+/* 사육관리 */
+.farmTable table {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.breedImgbox {
+    width: 50%;
+    margin: 0 auto;
+}
+.breedImgbox img {
+    width: 100%;
+    cursor: pointer;
+}

@@ -55,7 +55,7 @@ li.dateBox input {
 li.dateBox input:first-child::before {
     content: '-';
     position: absolute;
-    margin-left: 159px;
+    margin-left: 144px;
 }
 li.dateBox input:first-child {
     margin-right: 8px;
