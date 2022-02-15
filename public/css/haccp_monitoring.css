@@ -166,11 +166,33 @@ li.customeritem .profile h4 {
 }
 .colorItem {
     margin-right: 12px;
+
 }
+.moniterItem {
+    margin-bottom: 20px;
+}
+li.moniterItem.col-lg-3.Boxcustom h4 {
+    position: absolute;
+    z-index: 1;
+    font-weight: bold;
+    margin-top: 19px;
+}
+li.moniterItem.col-lg-3.Boxcustom .gray {
+color: #676767;
+}
+
 .moniterItem.col-lg-3:not(:last-child){
     margin-right: 1%;
 }
-
+.monitorCon.two .monitorText, .monitorCon.three .monitorText{
+    width: 150px;
+}
+.monitorCon.two .monitorText::after, .monitorCon.three .monitorText::after {
+    margin-left: 7.3%;
+}
+#gaugeChart01,#gaugeChart02,#gaugeChart03,#gaugeChart04,#gaugeChart05,#gaugeChart06,#gaugeChart07,#gaugeChart08,#gaugeChart09,#gaugeChart10  {
+    height: 200px;
+}
 /* 미디어태그 */
 @media (min-width: 1200px){
     .progressCon { 
@@ -178,6 +200,7 @@ li.customeritem .profile h4 {
     }
     .moniterItem.col-lg-3 {
         width: 24.222222%;
+        height: 200px;
     }
  
 }
