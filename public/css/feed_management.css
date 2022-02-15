@@ -78,10 +78,10 @@ li.middle_title p {
     font-weight: bold;
 }
 .feedConBox:nth-child(5) .feedarea::after{
-    content: '30%';
+    content: '55%';
     position: absolute;
     margin-top: 91px;
-    color: red;
+    color: #2AB930;
     font-weight: bold;
 }
 .feedConBox:nth-child(6) .feedarea::before{
@@ -92,10 +92,10 @@ li.middle_title p {
     font-weight: bold;
 }
 .feedConBox:nth-child(6) .feedarea::after{
-    content: '30%';
+    content: '65%';
     position: absolute;
     margin-top: 91px;
-    color: red;
+    color: #2AB930;
     font-weight: bold;
 }
 ul.infoBox {

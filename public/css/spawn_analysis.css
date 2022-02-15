@@ -15,9 +15,9 @@ li.middle_title p {
 .spawnConBox.col-lg-12.Boxcustom {
     margin-bottom: 20px;
 }
-.farmTable th, .farmTable td {
-    /* border-right: 1px solid #dadada; */
-}
+/* .farmTable th, .farmTable td {
+    /* border-right: 1px solid #dadada; 
+} */
 td:first-child, th:first-child {
     border: none;
     /* border-left: 1px solid #dadada; */
@@ -138,7 +138,7 @@ ul.customerBox li:not(:nth-child(2)) {
     margin-left: 5px;
     margin-top: 4px;
 }
-}
+
 .profile img {
     width: 25px;
     height: 25px;

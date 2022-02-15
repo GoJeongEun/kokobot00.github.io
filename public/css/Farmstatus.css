@@ -43,6 +43,10 @@ ul.topDong {
 }
 
 /*  topDong after dong number*/
+.topDong .topDongItem:first-child .topDongT p{
+    color: #1672EC;
+    font-weight: bolder;
+} 
 .topDong .topDongItem:first-child .topDongicon::after {
     content: '1동';
     font-size: 1.3rem;
