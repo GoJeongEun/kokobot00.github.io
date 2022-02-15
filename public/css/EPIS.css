@@ -32,6 +32,10 @@ li.tabBox {
 .tabright {
     display: flex;
 }
+.tabright .tabButton:nth-child(3) {
+    border: 1px solid #1672EC;
+    color: #1672EC;
+}
 .datesearch {
     height: 38px;
     padding: 0 1.5rem;

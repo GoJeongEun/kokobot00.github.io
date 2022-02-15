@@ -16,11 +16,11 @@ li.middle_title p {
     margin-bottom: 20px;
 }
 .farmTable th, .farmTable td {
-    border-right: 1px solid #dadada;
+    /* border-right: 1px solid #dadada; */
 }
 td:first-child, th:first-child {
     border: none;
-    border-left: 1px solid #dadada;
+    /* border-left: 1px solid #dadada; */
 }
 .spawnConBox:not(:nth-child(odd)){
     margin-bottom: 20px;
@@ -114,11 +114,38 @@ ul.customerBox li:not(:nth-child(2)) {
 .profile {
     display: flex;
 }
-.profile img {
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
+.profileArea {
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 17px;
 }
+.profileArea .img {
+    background-image: url(/icon/egg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+.profileArea .img04 {
+    background-image: url(/icon/gpicon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 28px;
+    height: 27px;
+    margin-left: 5px;
+    margin-top: 4px;
+}
+}
+.profile img {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-top: 4px;
+}
+
 .profile h4 {
     font-weight: bold;
     font-size: 1.5rem;
