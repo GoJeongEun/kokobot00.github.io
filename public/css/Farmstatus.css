@@ -14,7 +14,7 @@ ul.topDong {
     display: flex;
     margin: 0;
     justify-content: flex-start;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     flex-wrap: nowrap;
     height: 80px;
     width: 100%;
@@ -42,6 +42,43 @@ ul.topDong {
     background: #F4EBFF;
 }
 
+/*  topDong after dong number*/
+.topDong .topDongItem:first-child .topDongicon::after {
+    content: '1동';
+    font-size: 1.3rem;
+    margin-left: 9px;
+    font-weight: bold;
+}
+.topDong .topDongItem:nth-child(2) .topDongicon::after {
+    content: '2동';
+    font-size: 1.3rem;
+    margin-left: 9px;
+    font-weight: bold;
+}
+.topDong .topDongItem:nth-child(3) .topDongicon::after {
+    content: '3동';
+    font-size: 1.3rem;
+    margin-left: 9px;
+    font-weight: bold;
+}
+.topDong .topDongItem:nth-child(4) .topDongicon::after {
+    content: '4동';
+    font-size: 1.3rem;
+    margin-left: 9px;
+    font-weight: bold;
+}
+.topDong .topDongItem:nth-child(5) .topDongicon::after {
+    content: '5동';
+    font-size: 1.3rem;
+    margin-left: 9px;
+    font-weight: bold;
+}
+.topDong .topDongItem:nth-child(6) .topDongicon::after {
+    content: '6동';
+    font-size: 1.3rem;
+    margin-left: 9px;
+    font-weight: bold;
+}
 
 .topDongicon img {
     /* padding: 0.25rem; */

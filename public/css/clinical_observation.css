@@ -101,6 +101,10 @@ ul.clinicalarea li:first-child .iconBox {
     text-align: center;
     margin-right: 6px;
 }
+.clinicalarea .clinicalItem:nth-child(2) .iconBox img {
+    width: 25px;
+    height: 25px;
+}
 .iconBox img {
     width: 30px;
     height: 30px;

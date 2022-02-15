@@ -28,6 +28,9 @@ li.middle_title p {
     align-items: center;
     margin-top: 10px;
 }
+.hatchBox {
+    cursor: pointer;
+}
 li.hatchTag {
     padding: 0.5rem;
     text-align: center;
